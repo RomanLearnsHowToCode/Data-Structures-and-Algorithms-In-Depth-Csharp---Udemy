@@ -27,11 +27,50 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
+            /*
             LinearSearch LinearS = new LinearSearch();
             int[] A = { 84, 21, 47, 96, 15 };
             int found = LinearS.linearS(A, 5, 96);
             Console.WriteLine("Result: " + found);
             Console.ReadKey();
+            */
+
+            // binary search need to sorted! 
+            BinarySearch binarySearch = new BinarySearch();
+            /*
+            int[] A = { 15, 21, 47, 84, 96 };
+            int found = binarySearch.binarySearchIterative(A, 5, 96);
+            Console.WriteLine("Key index is: " + found);
+            Console.ReadLine();
+            */
+
+            /*
+            int[] A = { 15, 21, 47, 84, 96 };
+            int found = binarySearch.binarySearchRecursive(A, 96, 0, 4);
+            Console.WriteLine("Key index is: " + found);
+            Console.ReadKey();
+            */
+
+            /*
+            SelectionSort selectSort = new SelectionSort();
+            int [] A = { 3, 5, 8, 9, 6, 2 };
+            Console.WriteLine("Original Array: ");
+            selectSort.display(A, 6);
+            selectSort.selectionSort(A, 6);
+            Console.WriteLine("Sorted Array");
+            selectSort.display(A, 6);
+            Console.ReadKey();
+            */
+
+            InsertionSort insertSort = new InsertionSort();
+            int[] A = { 3, 5, 8, 9, 6, 2 };
+            Console.WriteLine("Original Array :");
+            insertSort.display(A, 6);
+            insertSort.insertionSort(A, 6);
+            Console.WriteLine("Sorted Array: ");
+            insertSort.display(A, 6);
+            Console.ReadKey();
+
         }
     }
 }

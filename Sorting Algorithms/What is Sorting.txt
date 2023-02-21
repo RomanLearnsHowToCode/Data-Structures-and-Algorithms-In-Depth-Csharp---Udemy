@@ -1,0 +1,96 @@
+﻿Sorting is one of the most important computing problems
+
+Sorting:
+
+- comparison sorting
+selection sort
+insertion sort
+bubble sort
+merge sort
+quick sort
+shell sort
+heap sort
+
+- index based 
+count sort
+bucked sort
+radix sort
+
+- stable and unstable sorting (dealing with duplicates)
+
+if there is a duplicate in the array or collection of elements, then in the stable sorting, the element is preserved
+ex;
+
+3 5 8 9 5 2 
+
+will be 
+2 3 5 5 8 9 (the element of index 1 (5) will be first, and then element of index 4 (also 5) will move to index 3)
+
+unstable would shift them over, 2 3 5 5 but they will move
+
+in some cases the stable is prefered, and in some the unstable sorting is prefered
+
+// Selection sort - the easiest
+
+- select a minimum element from the collection
+- place the selected element in a appropriate place
+
+6 barels, sort them by their weight - 3 5 8 9 6 2 
+
+
+// Insertion sort
+
+- select one element at a time from the left of the collection
+- insert the element at proper position
+- After insertion every element to its left will be sorted
+
+6 barels - 3 5 8 9 6 2
+
+1) will take 3 kg barel - this barel is already sorted
+2) remaining are 3 8 9 6 2
+3) 3 kg is smaller than 5 kg, so insert it
+4) 8 kg will be compared with 5 kg barel, and it is smaller, so it will insert it, and the 8 kg is sorted
+5) 9 kg barel will be compared with 8 kg barel, and it is smaller, so it will insert it, and it is sorted
+6) 6 kg will be compared with the 9 kg barel, so it will swap each barel from the left side of the 6 kg barel
+7) 6 kg barel is swapped with 9 kg barel, then 6 kg is compared to 8 kg barel
+8) 6 kg barel is smaller than the 8kg barel, so it will swap again, and the 8 kg barel will move
+9) 6 kg barel is compared to 5 kg barel, 5 kg barel is smaller than 6 kg so the 6 kg barel is sorted
+10) 2 kg barel will be compared to 9 kg barel, it is smaller, so it will have compare each element on the left
+11) 2 kg barel will swap with the 9 kg barel, then compare with the 8 kg barel, it is smaller so it will again swap the barels
+12) 2 kg barel is compared with 5 kg barel, it is smaller so it will swap again
+13) 2 kg barel will be compared with 3 kg barel, it is smaller again, so it will swap
+14) nothing is on the left side of the 2kg barel, so it is sorted, the insertion sort is done, all array is sorted
+
+// Bubble sort
+- compare the consecutive elements
+- if left element is greater than the right element, swap them
+- continue till the end of the collections and Perform several passes to sort the elements
+
+imagine 6 barels - 3, 5, 8, 9, 6, 2 kgs, and they need to be sorted according to their weight
+
+1) compare 3 kg with 5kg
+2) compare 5 kg with 8kg barel
+3) compare 8 kg with 9 kg barel 
+4) compare 9 kg with 6 kg - 6 is smaller so they will swap
+5) compare 9 kg with 2 kg - 2 kg is smaller - so they will swap
+6) reached the end of array - 9 kg is already sorted
+
+second round would start again
+1) 3 kg with 5 kg 
+2) 5 kg with 8 kg
+3) 8 kg with 6 kg, it will swap
+4) 8 kg with 2 kg, it will swap again, 8 is sorted
+
+1) 3kg with 5 kg
+2) 5 kg with 6 kg
+3) 6 kg with 2 kg - will swap
+4) 6 kg is sorted
+
+1) 3 kg with 5 kg
+2) 5 kg with 2 kg - will swap
+3) 5 kg is sorted
+
+1) 3 kg with 2 kg - will swap
+2) 2 kg is smaller than 3 kg 
+
+array is sorted

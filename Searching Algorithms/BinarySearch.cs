@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy.Searching_Algorithms
+namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 {
 
     /*
@@ -23,8 +23,62 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy.Searching_Algor
      -  
 
      */
+
     class BinarySearch
     {
+        // binary search - iterative
+        public int binarySearchIterative(int[] A, int n, int key)
+        {
+            //left index
+            int l = 0;
+            //right index
+            int r = n - 1;
 
+            // while left index is less or equal to right index
+            while (l <= r)
+            {
+                // mid is left index plus right index divided by 2 (if 0 + 5 / 2 = 2.5)
+                int mid = (l + r) / 2;
+                if(key == A[mid]) // if key found, return
+                {
+                    return mid;
+                } 
+                else if(key < A[mid]) // key is less than element in the mid of the array - key will be in the lower half of array
+                {
+                    r = mid - 1;
+                } 
+                else if (key > A[mid]) // key is greater than the element in the mid of the array - key will be in the upper half of the array
+                {
+                    l = mid + 1;
+                }
+            }
+            return -1;
+        }
+
+        // binary serach - recursive (array need to be sorted)
+        public int binarySearchRecursive(int[] A, int key, int l, int r)
+        {
+            if(l > r)
+            {
+                return -1;
+            }
+            else
+            {
+                int mid = (l + r) / 2;
+                if (key == A[mid])
+                {
+                    return mid;
+                }
+                else if (key < A[mid])
+                {
+                    return binarySearchRecursive(A, key, l, mid - 1);
+                }
+                else if (key > A[mid])
+                {
+                    return binarySearchRecursive(A, key, mid + 1, r);
+                }
+            }
+            return -1;
+        }
     }
 }

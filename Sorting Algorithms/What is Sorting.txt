@@ -61,7 +61,8 @@ in some cases the stable is prefered, and in some the unstable sorting is prefer
 13) 2 kg barel will be compared with 3 kg barel, it is smaller again, so it will swap
 14) nothing is on the left side of the 2kg barel, so it is sorted, the insertion sort is done, all array is sorted
 
-// Bubble sort
+// Bubble sort - worst case O(n2) - best case O(n)
+- stable sorting algorithm
 - compare the consecutive elements
 - if left element is greater than the right element, swap them
 - continue till the end of the collections and Perform several passes to sort the elements
@@ -94,3 +95,4 @@ second round would start again
 2) 2 kg is smaller than 3 kg 
 
 array is sorted
+

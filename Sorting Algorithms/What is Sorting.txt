@@ -96,3 +96,27 @@ second round would start again
 
 array is sorted
 
+// Shell Sort
+
+- selects an element and compare element after a gap
+- similar to insertion sort
+- insert selected element from the gap at its proper position
+
+example of 6 barels - 3, 5 ,8, 9, 6, 2kg, we have to sort them via weight from lowest to highest
+
+- gap = n / 2 = 6 / 2 = 3, the gap is 3
+
+1) compare first element with the element after gap, so compare 3 with 9 kg and perform swapping, then compare the element on the left side from the gap
+2) compare second element with the element after gap (5 with 6), there is no element lower than 6 on the right and left gap
+3) compare 8 kg barel with 2 kg barel, swap them, and also compare the 2 kg with same gap, there is no other element before 3kg
+4) 9 kg barel - there is no other  element
+
+gap would be again divided by 2 
+
+1) 3 kg will be comapred by 5 kg barel
+2) 5 kg will be compared by gap on left
+3) 5 kg compare with 2kg, 2 kg smaller so swap, 2 kg will be then compared with 3 kg element so it will swap again
+4) the gap would be divided by 2 again = 0
+
+once gap is 0, the sorting is completed
+

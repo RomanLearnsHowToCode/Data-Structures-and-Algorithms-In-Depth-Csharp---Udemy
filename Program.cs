@@ -73,6 +73,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
+            /*
             BubbleSort bubbleSort = new BubbleSort();
             int[] A = { 3, 5, 8, 9, 6, 2 };
             Console.WriteLine("Original Array");
@@ -81,6 +82,17 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Sorted Array");
             bubbleSort.display(A, 6);
             Console.ReadKey();
+            */
+
+            ShellSort shellSort = new ShellSort();
+            int[] A = { 3, 5, 8, 9, 6, 2 };
+            Console.WriteLine("Original Array");
+            shellSort.display(A, 6);
+            shellSort.shellSort(A, 6);
+            Console.WriteLine("Sorted Array");
+            shellSort.display(A, 6);
+            Console.ReadKey();
+
         }
     }
 }

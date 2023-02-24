@@ -133,3 +133,5 @@ once gap is 0, the sorting is completed
 - we will divide the left subset 
 
 - we are dividing a larger problem into smaller subsets
+
+// Quick Sort

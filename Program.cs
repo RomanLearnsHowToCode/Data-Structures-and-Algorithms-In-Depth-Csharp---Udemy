@@ -84,6 +84,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
+            /*
             ShellSort shellSort = new ShellSort();
             int[] A = { 3, 5, 8, 9, 6, 2 };
             Console.WriteLine("Original Array");
@@ -92,6 +93,22 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Sorted Array");
             shellSort.display(A, 6);
             Console.ReadKey();
+            */
+
+            /*
+            MergeSort mergeS = new MergeSort();
+            int[] A = { 3, 5, 8, 9, 6, 2 };
+            Console.WriteLine("Original Array: ");
+            mergeS.display(A, 6);
+            mergeS.mergeSort(A, 0, 6 - 1);
+            Console.WriteLine("Sorted Array: ");
+            mergeS.display(A, 6);
+            Console.ReadKey();
+            */
+
+            /*
+            
+             */
 
         }
     }

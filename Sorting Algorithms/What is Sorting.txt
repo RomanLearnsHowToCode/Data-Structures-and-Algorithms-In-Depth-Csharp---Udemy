@@ -133,5 +133,149 @@ once gap is 0, the sorting is completed
 - we will divide the left subset 
 
 - we are dividing a larger problem into smaller subsets
+- the idea of merge sort is understood, but re-watch this later again
 
 // Quick Sort
+
+- divide the collection of elements into subsets or partitions
+- partition based on Pivo
+- Recursively sort the partitions using quick sort
+- divide and conquer approach
+
+- barrels - 3 5 8 9 6 2 kgs
+
+- elements on left side from the pivor are all all smaller than the pivot, elements on the right side from the pivot are all larger than the pivot
+
+- out of 28 37 45 15 54 86 92 63 78, which element is the pivot? It would be 54 because on the left side from the 54, all elements are smaller than pivo, and 
+  on the right side from the 54 all elements are larger, elements might not be sorted, we are interested only in finding the PIVOT
+
+ - the idea of quick sort is that we have got a collection of elements, we will select a pivot and then we can perform partitioning, quick sort would work only if we have 
+ more than one element
+
+ 54 78 63 92 45 86 15 28 37 
+ P  i                    j
+
+ we will select the 54 as pivot, we will have two elements, I and J reference I will move from left to right and J from right to left,
+
+ pivot 54, i is moving to right and is 78, i will stop, j is 37 and compared with 54 kg pivot, j is smaller so it will stop and the elements on i and j will swap
+ so the result is:
+
+ 54 37 63 92 45 86 15 28 78
+ P     i              j
+
+i is higher than P, will stop, j is smaller than P, will stop, they will swap
+
+54 37 28 92 45 86 15 63 78
+P        i        j
+
+i is higher than P, will stop, j is smaller than P, will stop, they will swap
+
+54 37 28 15 45 86 92 63 78
+P           i  
+
+P compared with i, i is smaller than P, will be incremeneted 
+
+54 37 28 15 45 86 92 63 78
+P              i  j
+
+P compared to i, is great will stop, j would be incerement, is 86, P is smaller than j, will increment
+
+54 37 28 15 45 86 92 63 78
+P            j i 
+
+when the J cross I, we can say that all elements were traversed
+
+it means, that the Pivot would swap with J, 54 would be SORTED 
+
+45 37 28 15 54 86 92 63 78
+P           S
+
+All elements on left side from Sorted are smaller, all elements on right side from sorted are higher, then the elements would be partitioned
+Then the quick sort would be recursivelly called on partitions
+
+45 37 28 15 54 86 92 63 78
+P           S
+i           j
+
+45 37 28 15 54
+P  i        j
+
+P compared to i, i is not greater than the P, would increate 
+
+45 37 28 15 54
+P     i     j
+
+P compared to i, i is not greater than the P, would increate 
+
+45 27 28 15 54
+P        i  j
+
+P compared to i, i is not greater than the P, would increate 
+
+45 27 28 15 54
+P           ij
+
+i will stop, as the P is smaller than the J
+
+45 27 28 15 54
+P        j   i
+
+P is greater than j, would stop, the references are crossed, j position element 15 is swapped with pivot
+
+15 37 28 45 54
+         S   S
+
+Quick sort is recursively called
+
+15 37 28 45 54
+P        j
+i
+
+15 37 28 45 54
+P  i  j
+
+15 37 28 45 54
+P  i
+j
+
+Traveresed all elements, i crossed, will swap 
+P 15 is sorted
+Quick sort is called recursivelly
+
+15 37 28 45 54
+   Pi    j
+
+15 37 28 45 54
+   p     ij
+
+P compared with i, i is greater, would stop, j would increment
+
+15 37 28 45 54
+   P  j  i
+
+P compared with J, 37 greater than 28, will swap
+
+Quick sort is called recursively, but need two elemenets to be called, since there is only 28 kg element left, it is considered sorted
+
+15 28 37 45 54
+Left partition is sorted
+
+Now we will perform quicksort on right side partition
+
+86 92 63 78 
+P  i          j
+
+P compared to i, P greater would stop, j incremented
+
+86 92 63 78
+P  i     j 
+
+P greater than J, would swap
+
+86 78 63 92 - traversed all elements, j would swap with P
+P      j i
+
+63 78 86 92
+
+quick sort is called again
+

@@ -109,6 +109,14 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             /*
             
              */
+            QuickSort quickS = new QuickSort();
+            int[] A = { 3, 5, 8, 9, 6, 2 };
+            Console.WriteLine("Original Array");
+            quickS.display(A, 6);
+            quickS.quickSort(A, 0, 5);
+            Console.WriteLine("Sorted Array");
+            quickS.display(A, 6);
+            Console.ReadKey();
 
         }
     }

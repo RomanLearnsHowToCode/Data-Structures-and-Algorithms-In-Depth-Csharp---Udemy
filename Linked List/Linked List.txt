@@ -20,15 +20,25 @@ Problems with Arrays
 - Arrays stores data sequentially in the memory
 - we don't know how many elements we need to store
 
+
+// Creating a Node of Linked List
+
 Linked List:
 - Add or delete any amount of elements in the data structure
 - Efficient utilisation of memory
 - NODE is a location in memory, they are not sequential
-
-// Creating a Node of Linked List
+- Linked List contain head and tail, the head is of fixed position, otherwise we would lose the reference of the linked list beginning
 
 // Playing with the links of Linked List
 
+
+
 // How to create a linked list?
+addlast - is used to create a node at last position, initially the list will be empty, so after we will create the first node, we will need to check if the
+list is empty. If the list is empty, then head = newest, if the condition is false, then we will asign tail = newest, and we will increase the size of the linked list
+size = size +1; if there is only one node in the linked list, then the head and tail would point to the first node.
 
 // Displaying or Traversing Linked List
+starting at head and using the .next reference we are traversing though the list, until we will reach the tail of the list
+tail of the linked list contain a null as next reference.
+

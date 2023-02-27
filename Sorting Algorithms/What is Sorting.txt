@@ -279,3 +279,14 @@ P      j i
 
 quick sort is called again
 
+
+
+// Complexity of Sorting Algorithms
+
+Selection
+Insertion
+Bubble Sort
+Shell Sort
+Merge Sort
+Quick Sort
+Heap Sort

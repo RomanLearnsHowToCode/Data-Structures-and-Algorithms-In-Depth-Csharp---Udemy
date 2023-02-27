@@ -1,5 +1,30 @@
 ﻿// What os Linked List?
 
+Arrays:
+- arrays are of fixed size - immutable
+- once array is declared size cannot be changed
+- arrays stores data sequentially in the memory
+- data in array must be of same type
+
+Linked List:
+- Linked list is a collection of elements, where each element is represented as a node
+- Node contain DATA and LINK, link contain a reference where the point 
+- When the node is last item in the collection, the link will be null
+- How we will access the collection of elements? This is done by link, which stores the memory addres of the nodes
+- Linked list is not continuous data structure as arrays are. Arrays have elements side by side
+
+- We are using the Linked lists for following reasons:
+
+Problems with Arrays
+- Arrays are of fixed size
+- Arrays stores data sequentially in the memory
+- we don't know how many elements we need to store
+
+Linked List:
+- Add or delete any amount of elements in the data structure
+- Efficient utilisation of memory
+- NODE is a location in memory, they are not sequential
+
 // Creating a Node of Linked List
 
 // Playing with the links of Linked List

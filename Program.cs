@@ -107,8 +107,6 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             /*
-            
-             */
             QuickSort quickS = new QuickSort();
             int[] A = { 3, 5, 8, 9, 6, 2 };
             Console.WriteLine("Original Array");
@@ -116,6 +114,17 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             quickS.quickSort(A, 0, 5);
             Console.WriteLine("Sorted Array");
             quickS.display(A, 6);
+            Console.ReadKey();
+            */
+
+            LinkedList linkedL = new LinkedList();
+            linkedL.addLast(7);
+            linkedL.addLast(4);
+            linkedL.addLast(12);
+            linkedL.addLast(3);
+            linkedL.addLast(5);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
             Console.ReadKey();
 
         }

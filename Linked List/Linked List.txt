@@ -62,4 +62,30 @@ if the list is not empty,
 
  // insert anywhere
 
- - 
+ - we need to insert the node at any position / given position, we will need to traverse the linked list, 
+ we will create the node again, so it will be reference of newest.
+
+ the node will have reference to head stored as variable p
+ we will have variable i as the integer of how many positions the node traversed
+
+
+ // Delete Element at Beginning of Linked list
+ Linked list contain collection of elements represented by nodes
+ - to remove the first node of the list we need to check if the list is empty
+ - if the list is empty, then we will print that the list is empty and we will return
+
+ - if the list is not empty, then we will retrieve the element we are deleting, 
+ e = head.element
+ head = head.next - second node, so it will assign the head to the following node
+size = size - 1; - since we have reduced the list size by one
+if the list has got only one element, then after the deleting of the element, list will be empty, the head and tail should be null
+head should be assigned to null, and tail should be assigned to null, we will need to explicitliy assign the tail to null.
+
+in certain programming languages such as C or C++ we will need to explicitly free the memory.
+
+ // Delete Element at End of Linked list
+
+ // Delete Element anywhere in between Linked list
+
+ // Searching Element in Linked list
+

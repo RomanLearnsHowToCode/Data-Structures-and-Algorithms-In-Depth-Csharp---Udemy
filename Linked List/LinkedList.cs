@@ -66,7 +66,6 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
         }
 
         // traversing the list and displaying the list
-
         public void display()
         {
             Node p = head;
@@ -79,7 +78,6 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
         }
 
         // add first node - e is the element we are trying to insert
-
         public void addFirst(int e)
         {
             // the node won't point at any other node at this moment
@@ -99,5 +97,51 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             size = size + 1;
         }
 
+        // insert anywhere
+        public void addAnywhere(int e, int position)
+        {
+            // check if the position, where we want to add the node is valid position, if position if 0 then we are inserting at the beginning
+
+            if(position <= 0 || position >= size)
+            {
+                Console.WriteLine("Invalid position to insert the node");
+                return;
+            }
+            Node newest = new Node(e, null);
+            Node p = head; // assign reference to head
+            int i = 1;
+
+            // traversing the linked list
+            while(i < position - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            newest.next = p.next;
+            p.next = newest;
+            size = size + 1;
+
+        }
+        // delete node at the beginning of the linked list - remove first, won't have any parameters, but would return the element removed, in this case INT
+        public int deleteFirst()
+        {
+            // if condition true, list is empty, we cannot remove element from list
+            if (isEmpty())
+            {
+                Console.WriteLine("List is Empty");
+                return -1;
+            }
+            else
+            {
+                int e = head.element;
+                head = head.next;
+                size = size - 1;
+                if (isEmpty())
+                {
+                    tail = null;
+                }
+                return e;
+            }
+        }
     }
 }

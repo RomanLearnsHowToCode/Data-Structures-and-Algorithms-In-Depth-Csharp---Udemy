@@ -117,6 +117,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
+            // Linked list
             LinkedList linkedL = new LinkedList();
             linkedL.addLast(7);
             linkedL.addLast(4);
@@ -128,8 +129,21 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             linkedL.addFirst(18);
             linkedL.display();
             Console.WriteLine("Size: " + linkedL.lenght());
+            linkedL.addAnywhere(20, 3);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
+            linkedL.addAnywhere(25, 5);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
+            linkedL.addFirst(35);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
+            int element = linkedL.deleteFirst();
+            Console.WriteLine("Removed Element: " + element);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
             Console.ReadKey();
-
+            
         }
     }
 }

@@ -78,5 +78,26 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine(); // output on separate line
         }
 
+        // add first node - e is the element we are trying to insert
+
+        public void addFirst(int e)
+        {
+            // the node won't point at any other node at this moment
+            Node newest = new Node(e, null);
+
+            if (isEmpty())
+            {
+                head = newest;
+                tail = newest;
+
+            }
+            else
+            {
+                newest.next = head;
+                head = newest;
+            }
+            size = size + 1;
+        }
+
     }
 }

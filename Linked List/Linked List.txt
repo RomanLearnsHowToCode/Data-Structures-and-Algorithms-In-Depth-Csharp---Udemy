@@ -42,3 +42,24 @@ size = size +1; if there is only one node in the linked list, then the head and 
 starting at head and using the .next reference we are traversing though the list, until we will reach the tail of the list
 tail of the linked list contain a null as next reference.
 
+
+// Insert Element at Beginning of List
+
+- we need to check if the list is empty, if the list is empty, then we need to select this node as head of the list
+head = newest
+head will be pointing at this node
+
+- we need to assign tail of the linked list
+tail = newest
+tail will point at the first node as well
+
+if the list is not empty, 
+
+ newest.next = head
+ head = newest 
+
+ addFirst will add the node at the beginning of the linked list and would assign the head to it, and increase the size of the linked list
+
+ // insert anywhere
+
+ - 

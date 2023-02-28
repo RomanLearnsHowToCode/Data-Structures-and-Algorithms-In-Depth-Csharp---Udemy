@@ -125,6 +125,9 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             linkedL.addLast(5);
             linkedL.display();
             Console.WriteLine("Size: " + linkedL.lenght());
+            linkedL.addFirst(18);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
             Console.ReadKey();
 
         }

@@ -166,5 +166,27 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             size = size - 1;
             return e;
         }
+
+        public int deleteAnywhere(int position)
+        {
+            // we cannot have negative poision or equal to zero
+            if (position <= 0 || position >= size -1)
+            {
+                Console.WriteLine("Invalid Position");
+                return -1; // we cannot delete element
+            }
+
+            Node p = head;
+            int i = 1;
+            while(i < position - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            int e = p.next.element; // p point to position plus one, and p.next is poiting to node we are deleting
+            p.next = p.next.next;
+            size = size - 1;
+            return e;
+        }
     }
 }

@@ -36,8 +36,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             // binary search need to sorted! 
-            BinarySearch binarySearch = new BinarySearch();
             /*
+            BinarySearch binarySearch = new BinarySearch();
             int[] A = { 15, 21, 47, 84, 96 };
             int found = binarySearch.binarySearchIterative(A, 5, 96);
             Console.WriteLine("Key index is: " + found);
@@ -140,6 +140,10 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Size: " + linkedL.lenght());
             int element = linkedL.deleteFirst();
             Console.WriteLine("Removed Element: " + element);
+            linkedL.display();
+            Console.WriteLine("Size: " + linkedL.lenght());
+            int element2 = linkedL.deleteLast();
+            Console.WriteLine("Removed Element: " + element2);
             linkedL.display();
             Console.WriteLine("Size: " + linkedL.lenght());
             Console.ReadKey();

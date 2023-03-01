@@ -143,5 +143,28 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
                 return e;
             }
         }
+
+        // remove last element
+        public int deleteLast()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("List is Empty");
+                return -1;
+            }
+            Node p = head;
+            int i = 1;
+            while(i < size - 1) // traversing through the list to the end -1
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            tail = p;
+            p = p.next;
+            int e = p.element;
+            tail.next = null;
+            size = size - 1;
+            return e;
+        }
     }
 }

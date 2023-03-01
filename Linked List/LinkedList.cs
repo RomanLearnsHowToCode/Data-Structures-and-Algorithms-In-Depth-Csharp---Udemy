@@ -188,5 +188,27 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             size = size - 1;
             return e;
         }
+
+        // search element in the linked list - int key is the element we are trying to find
+
+        public int search(int key)
+        {
+            Node p = head;
+            int index = 0;
+
+            // the while loop would traverse through the linked list, until it would find the element, if the p is null (no more nodes in the list it would terminate)
+            while (p != null)
+            {
+                // we found the element
+                if(p.element == key)
+                {
+                    return index;
+                }
+                p = p.next;
+                index = index + 1;
+            }
+            return -1; // we have not found the element
+        }
+
     }
 }

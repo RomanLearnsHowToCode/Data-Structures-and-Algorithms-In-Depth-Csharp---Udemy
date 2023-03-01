@@ -146,6 +146,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Removed Element: " + element2);
             linkedL.display();
             Console.WriteLine("Size: " + linkedL.lenght());
+            int position = linkedL.search(12);
+            Console.WriteLine("Result of search is index: " + position);
             Console.ReadKey();
             
         }

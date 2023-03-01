@@ -84,10 +84,13 @@ head should be assigned to null, and tail should be assigned to null, we will ne
 in certain programming languages such as C or C++ we will need to explicitly free the memory.
 
  // Delete Element at End of Linked list
-
-
-
  // Delete Element anywhere in between Linked list
 
- // Searching Element in Linked list
 
+ // Searching Element in Linked list
+ searching for the key in linked list, we will create two variables, index and p, in if statement we will compare the p.element with the key,
+ if they equal, we found the element, and we would return the index
+
+ if not, when we will traverse through the list, and assign the p. to next node and increase the index
+
+ O(n) - worst case scenario

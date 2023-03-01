@@ -1,0 +1,20 @@
+﻿// What is circluar linked list
+Is a linked list wehre the tail node points back to the head node
+
+[7, 4, 12, 8, 3]
+
+last node is with value of 3, instead of having null reference in the last node, we will have reference to head (first node)
+there is no beginning or end of the list ,but we need to keep the reference of the head and tail
+the main difference between linked list and circular linked list is that we have to handle how the tail node would reference to the head node
+
+If there is only one node, then the tail and head are pointing at the one node
+
+// Creating circular linked list
+
+// Traversing circular linked list
+
+// Insert element at the beginning of the circular linked list
+
+// Insert element anywhere in between the circular linked list
+
+//

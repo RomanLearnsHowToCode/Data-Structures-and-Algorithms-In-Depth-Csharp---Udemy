@@ -12,6 +12,9 @@ If there is only one node, then the tail and head are pointing at the one node
 // Creating circular linked list
 
 // Traversing circular linked list
+we will traverse the list through the nodes, till the last, there is no null reference, the last node in list contain reference to the first node.
+
+- repear this part and write down the algoritm on paper
 
 // Insert element at the beginning of the circular linked list
 

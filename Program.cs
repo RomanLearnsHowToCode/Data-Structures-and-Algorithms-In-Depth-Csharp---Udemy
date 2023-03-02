@@ -5,7 +5,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             /*
             Recursion recursion = new Recursion();
             recursion.Recursion1();
@@ -118,6 +118,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             // Linked list
+            /*
             LinkedList linkedL = new LinkedList();
             linkedL.addLast(7);
             linkedL.addLast(4);
@@ -149,7 +150,21 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             int position = linkedL.search(12);
             Console.WriteLine("Result of search is index: " + position);
             Console.ReadKey();
-            
+            */
+
+            /*
+             Circular linked list
+   
+             */
+
+            CircularLinkedList circularL = new CircularLinkedList();
+            circularL.addLast(7);
+            circularL.addLast(4);
+            circularL.addLast(12);
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            Console.ReadKey();
+
         }
     }
 }

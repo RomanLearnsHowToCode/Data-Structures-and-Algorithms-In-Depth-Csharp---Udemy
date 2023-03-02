@@ -163,6 +163,12 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             circularL.addLast(12);
             circularL.display();
             Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            circularL.addFirst(35);
+            circularL.addAnywhere(9, 2);
+            circularL.addFirst(30);
+            circularL.addLast(20);
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
             Console.ReadKey();
 
         }

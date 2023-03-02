@@ -20,7 +20,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
     }
 
     /*
-     
+        
      */
     class CircularLinkedList
     {
@@ -79,6 +79,50 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
                 i = i +1;
             }
             Console.WriteLine();
+        }
+
+        // add first method
+
+        public void addFirst(int e)
+        {
+            // created new object newest of type Node
+            NodeC newest = new NodeC(e, null);
+
+            if (isEmpty())
+            {
+                newest.next = newest;
+                head = newest;
+                tail = newest;
+            }
+            else
+            {
+                tail.next = newest;
+                newest.next = head;
+                head = newest; // newest is now the first node in the list
+            }
+            size = size + 1;
+
+        }
+
+        public void addAnywhere(int e, int position)
+        {
+            if(position <= 0 || position >= size) // cannot be first or cannot at the end
+            {
+                Console.WriteLine("Invalid Position");
+                return;
+            }
+            NodeC newest = new NodeC(e, null);
+            NodeC p = head;
+            int i = 1;
+
+            while (i < position -1) //traversing through the list until we will find the the position, where the node should be inserted
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            newest.next = p.next;
+            p.next = newest;
+            size = size + 1;
         }
     }
 }

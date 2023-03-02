@@ -17,7 +17,32 @@ we will traverse the list through the nodes, till the last, there is no null ref
 - repear this part and write down the algoritm on paper
 
 // Insert element at the beginning of the circular linked list
+we will create a function
+the function will contain take the element as the parameter of given data type
+we will create newest object which will take NODE constructor
+
+we will check if the list is empty, if it is empty, then this node will be the first and only node, so we will assign references accordingly
+we will assing the newest.next as newest so it will reference itself
+we will set the head to newest
+and we will set the tail to newest
+
+if there are more nodes in the linked list, then we will write else statement where;
+tail.next (reference of the tail) = newest
+newest.next = head
+head = newest
+
+outside of the if else block we need to increase the size of linked list by one
 
 // Insert element anywhere in between the circular linked list
+- we will need to create a function addAny(e, position) (add anywhere) - parameters element and position
+- newest will create a new object of type NodeC with parameters e and null 
+- we will need to traverse the circular list, to count the position
+- the while loop counting the position while(i < position -1)
+will find the position to which the node should be insterted
+- O(n)
 
-//
+// Delete Element at beginning of circular list
+
+// Delete Element at end of the circular list
+
+// Delete anywhere in between circular list

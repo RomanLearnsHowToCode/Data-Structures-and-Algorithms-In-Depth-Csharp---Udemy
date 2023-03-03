@@ -166,7 +166,16 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             circularL.addFirst(35);
             circularL.addAnywhere(9, 2);
             circularL.addFirst(30);
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
             circularL.addLast(20);
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            circularL.display();
+            int element = circularL.removeFirst();
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            Console.WriteLine("Element removed:" + element);
             circularL.display();
             Console.WriteLine("Size of Circular Linked List: " + circularL.length());
             Console.ReadKey();

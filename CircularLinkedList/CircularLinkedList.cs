@@ -124,5 +124,25 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             p.next = newest;
             size = size + 1;
         }
+
+        public int removeFirst()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("Circular List is Empty");
+                return -1;
+            }
+            int e = head.element;
+            tail.next = head.next;
+            head = head.next;
+            size = size - 1;
+
+            if (isEmpty())
+            {
+                head = null;
+                tail = null;
+            }
+            return e;
+        }
     }
 }

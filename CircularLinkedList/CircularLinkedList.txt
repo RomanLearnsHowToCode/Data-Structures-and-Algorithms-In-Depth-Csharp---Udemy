@@ -42,7 +42,14 @@ will find the position to which the node should be insterted
 - O(n)
 
 // Delete Element at beginning of circular list
+Deleteing of the element from the linked list is reverse procedure of insterting node on the beginning of the list
+We will create a new method, removeFirst() without any parameters
+we will first check if the list is empty, if the list is empty, then we cannot delete any node from list
+head should point on the second node of the circular list, but first we need to reference of tail
+
 
 // Delete Element at end of the circular list
+
+
 
 // Delete anywhere in between circular list

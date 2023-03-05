@@ -144,5 +144,52 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
             return e;
         }
+
+        public int removeLast()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("Circulat list is empty"); 
+                    return -1;
+            }
+            NodeC p = head;
+            int i = 1;
+
+            while(i < length() - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+
+            tail = p;
+            p = p.next;
+            tail.next = head;
+            int e = p.element;
+            size = size - 1;
+            return e;
+        }
+
+        public int removeAnywhere(int position)
+        {
+            if (position <= 0 || position >= size - 1)
+            {
+                Console.WriteLine("Invalid Position");
+                return -1;
+            }
+
+            NodeC p = head;
+            int i = 1;
+
+            while(i < position - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            int e = p.next.element;
+            p.next = p.next.next;
+            size = size - 1;
+            return e;
+        }
+
     }
 }

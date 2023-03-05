@@ -49,7 +49,9 @@ head should point on the second node of the circular list, but first we need to 
 
 
 // Delete Element at end of the circular list
+we cannot delete easily the node, eventhough we will mantain the tail reference
+we will need to traverse the circular linked list, to the end of the linked list -1 
 
-
+removeLast method without parameters will check if the circulat list is empty, 
 
 // Delete anywhere in between circular list

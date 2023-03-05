@@ -178,6 +178,11 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Element removed:" + element);
             circularL.display();
             Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            circularL.addLast(104);
+            circularL.display();
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            circularL.removeLast();
+            circularL.display();
             Console.ReadKey();
 
         }

@@ -80,6 +80,28 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             size = size + 1;
         }
 
+        public void addAny(int e, int position)
+        {
+            if(position <= 0 || position >= size)
+            {
+                Console.WriteLine("Invalid POsition");
+                return;
+            }
+            NodeD newest = new NodeD(e, null, null);
+            NodeD p = head;
+            int i = 1;
+            while (i < position - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            newest.next = p.next;
+            p.next.prev = newest; // taking care of previous reference
+            p.next = newest;
+            newest.prev = p;
+            size = size + 1;
+        }
+
 
         // display method
         public void display()

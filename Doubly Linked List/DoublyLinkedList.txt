@@ -38,10 +38,14 @@ the while loop would continue until the end of the list
 
 // Insert Element at the Beginning of the Doubly Linked List - O(1)
 addfist(element)
+will check if list is empty
 
 // Insert Element Anywhere in between the Doubly Linked List
+handling the links is the important and interesting operation here
+we need to be careful and do not loose the reference of tail and head
 
 // Delete Element at beginning of the doubly ll
+
 
 // delet Element at end of Doubly ll
 

@@ -1,1 +1,48 @@
-﻿
+﻿// what is doubly linked list?
+also contains collection of elements repesented in nodes
+
+we can efficiently insert or delete nodes in doubly linked list, one of the major benefits
+
+
+//Creating Node of Doubly Linked List
+in doubly linked list we keep reference of previous and following nodes
+elelement next prev
+
+creating a node; n1 = Node(7, null null) - node with element 7 and empty references for next and previous nodes
+n2 = Node(4, null, null) - new node will be created in computer memory
+
+we have got two nodes, we need to create a link between these nodes, 
+n1 next = null, we need to reference the address by n1.next = n2, this will store the adrress of the n2 as next
+we need to assign memory of n1 to previous on n2. n2.prev = n1; we are storing the reference of n1 into n2.prev
+
+we cannot create nodes as n1 n2 n3 n4, this is not correct way of programing, we need to create a class as DoublyLinkedList
+
+// Playing wiht links of doubly linked list
+
+Traversing Nodes of Double Linked List, the first node in list is called HEAD, last is called TAIL, we might or might not use the TAIL reference, we will never manipulate
+the head otherwise we will lose the reference of the position
+object X - we will assign HEAD to the x, x = head 
+we will create y variable and store the value of x, y = x, the head of y would point to first node
+
+// Creating Doubly Linked List
+
+function addLast(e) - we are adding nodes one by one, so when we are inserting the node, this function would place it at the last place of the Doubly LL
+
+newest  = Node(e, Null, Null)
+isEmpty() then head = newest, tail = newest
+else tail.next = newest, newest. prev = tail, tail = newest, size = size +1 - O(1)
+
+// Traversing Doubly Linked List - O(n)
+we will use function display() - p = head, p will point at the first node of the list, while p  -> print(p.element) and move to next node p = p.next, 
+the while loop would continue until the end of the list
+
+// Insert Element at the Beginning of the Doubly Linked List - O(1)
+addfist(element)
+
+// Insert Element Anywhere in between the Doubly Linked List
+
+// Delete Element at beginning of the doubly ll
+
+// delet Element at end of Doubly ll
+
+//

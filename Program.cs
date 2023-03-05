@@ -157,6 +157,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
    
              */
 
+            /*
             CircularLinkedList circularL = new CircularLinkedList();
             circularL.addLast(7);
             circularL.addLast(4);
@@ -183,6 +184,24 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Size of Circular Linked List: " + circularL.length());
             circularL.removeLast();
             circularL.display();
+            int element2 = circularL.removeAnywhere(3);
+            Console.WriteLine("Size of Circular Linked List: " + circularL.length());
+            circularL.display();
+            Console.ReadKey();
+            */
+
+            // Doubly linked list
+
+            DoublyLinkedList doublyL = new DoublyLinkedList();
+            doublyL.addLast(2);
+            doublyL.addLast(4);
+            doublyL.addLast(7);
+            doublyL.addLast(12);
+            doublyL.display();
+            Console.WriteLine("Size of the doubly linked list " + doublyL.length());
+            doublyL.addFirst(15);
+            doublyL.display();
+            Console.WriteLine("Size of the doubly linked list " + doublyL.length());
             Console.ReadKey();
 
         }

@@ -102,6 +102,68 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             size = size + 1;
         }
 
+        // remove element from beginning of the list
+        public int removeFirst()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("List is empty");
+                return -1;
+            }
+            int e = head.element;
+            head = head.next;
+            size = size - 1;
+
+            if (isEmpty())
+            {
+                tail = null;
+            }
+            else
+            {
+                head.prev = null;
+            }
+            return e;
+        }
+
+        // remove at the end of the list
+
+        public int removeLast()
+        {
+            if (isEmpty())
+            {
+                Console.WriteLine("Doubly list is Empty");
+                return -1;
+            }
+            //we can use the reference from previous node reference
+            int e = tail.element;
+            tail = tail.prev;
+            tail.next = null;
+            size = size - 1;
+            return e;
+        }
+
+        // remove anywhere
+
+        public int removeAnyhwere(int position)
+        {
+            if(position <= 0 || position >= size - 1)
+            {
+                Console.WriteLine("Position not valid");
+                return -1;
+            }
+            NodeD p = head;
+            int i = 1;
+            while(i < position - 1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            int e = p.next.element;
+            p.next = p.next.next;
+            p.next.prev = p;
+            size = size - 1;
+            return e;
+        }
 
         // display method
         public void display()

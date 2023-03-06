@@ -205,7 +205,15 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             doublyL.addAny(20,3);
             doublyL.display();
             Console.WriteLine("Size of the doubly linked list " + doublyL.length());
+            doublyL.addFirst(85);
+            doublyL.display();
+            Console.WriteLine("Size of the doubly linked list " + doublyL.length());
+            doublyL.removeFirst();
+            doublyL.display();
+            Console.WriteLine("Size of the doubly linked list " + doublyL.length());
             Console.ReadKey();
+
+
 
         }
     }

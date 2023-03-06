@@ -192,6 +192,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             // Doubly linked list
 
+            /*
             DoublyLinkedList doublyL = new DoublyLinkedList();
             doublyL.addLast(2);
             doublyL.addLast(4);
@@ -212,9 +213,46 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             doublyL.display();
             Console.WriteLine("Size of the doubly linked list " + doublyL.length());
             Console.ReadKey();
+            */
 
+            // size of 10
+            /*
+            StackArray stackArray = new StackArray(10);
+            stackArray.push(5);
+            stackArray.push(3);
+            stackArray.display();
+            Console.WriteLine("Size: " + stackArray.lenght());
+            Console.WriteLine("Element popped: " + stackArray.pop());
+            Console.WriteLine("Size: " + stackArray.lenght());
+            Console.WriteLine("Element popped: " + stackArray.pop());
+            Console.WriteLine("Size: " + stackArray.lenght());
+            Console.WriteLine("Element popped: " + stackArray.pop());
+            Console.WriteLine("Size: " + stackArray.lenght());
+            Console.WriteLine("Element popped: " + stackArray.pop());
+            stackArray.push(7);
+            stackArray.push(9);
+            stackArray.display();
+            Console.WriteLine("Element peeked: " + stackArray.peek());
+            stackArray.display();
+            Console.ReadKey();
+            */
 
-
+            /**/
+            stackLinkedList stackLinkedL = new stackLinkedList();
+            stackLinkedL.push(6);
+            stackLinkedL.push(3);
+            stackLinkedL.display();
+            Console.WriteLine("Size: " + stackLinkedL.length());
+            Console.WriteLine("Element Removed: " + stackLinkedL.pop());
+            Console.WriteLine("Is Empty: " + stackLinkedL.isEmpty());
+            Console.WriteLine("Element Removed: " + stackLinkedL.pop());
+            Console.WriteLine("Is Empty: " + stackLinkedL.isEmpty());
+            stackLinkedL.push(9);
+            stackLinkedL.push(15);
+            stackLinkedL.display();
+            Console.WriteLine("Element Top:" + stackLinkedL.peek());
+            stackLinkedL.display();
+            Console.ReadKey();
         }
     }
 }

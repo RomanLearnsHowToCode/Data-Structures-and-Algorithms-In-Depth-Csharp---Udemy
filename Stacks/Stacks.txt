@@ -21,6 +21,43 @@ how to implement stack?
 We can use Arrays or Linked List, and the stack abstract data type can be applied
 
 // Stacks using Arrays
+push method - we need to check if the stack is full, if the stack is not full then
+pop method - won't use any parameters, would remove the element, again we need to check if the stact is empty
+top method (peek) - won't use any parameters, before we would remove, we need again check if the stack is empty, data[top -1]
 
 
 // Stacks using Linked List
+
+Insert Operations:
+
+- insert element at the tail - O(1)
+- insert element at the head - O(1)
+- insert element at any position
+
+
+Remove Operations:
+
+- remove element at the tail - O(n)
+- remove element at the head - O(1)
+- remove element at any position
+
+We will need node class, it is same node as in linkedlist, contain the same parameters
+
+// insert node at the top of the stack
+method push(e)
+first we will create new node with parameters of element and null
+then we will check if the stack is empty, if yes, then we will assign top to newest
+
+if not, then we will assing top to the newest.next
+then top assign to newest
+and increase size of the stack
+
+// is reverse operation of push, removing element at the top of the stack
+method pop() - O(1)
+first we will check if the stack is empty, if is empty, we cannot remove node
+if the stack is not empty, then we will retrieve the element we are popping - e = top.element
+
+// return the top element without removing it
+method top() - O(1)
+won't use any parameters, first we need to check if the stack is empty, if is empty, we cannot retrieve any element
+if is not empty, we will retrieve the element and return

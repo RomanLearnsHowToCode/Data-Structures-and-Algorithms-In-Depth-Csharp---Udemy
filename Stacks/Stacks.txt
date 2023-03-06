@@ -1,0 +1,26 @@
+﻿// What is Stack Data Structure?
+
+Stack is a collection of objects, LIFO - Last-IN First-OUT)
+push and pop are the fundamental operations of stack, imagine bottle of tennist balls, 1 end is open
+stack has got TOP and BOTTOM
+
+usage of stacks:
+web browser history
+undo operations in editing applications 
+HTML document tags matching
+Evaluating arithemtic expressions
+infix to postfix conversion
+
+- push(object): insert element
+- pop(): remove & return element
+- top(): returns last inserted element, without removing it
+- len(): size of the stack
+- isEmpty(): whether the stack is empty or not
+
+how to implement stack?
+We can use Arrays or Linked List, and the stack abstract data type can be applied
+
+// Stacks using Arrays
+
+
+// Stacks using Linked List

@@ -1,1 +1,30 @@
-﻿
+﻿// What is queue data structure?
+Queue is a collection of objects
+FIFO (First In First Out)
+Imagine pipe or queue of cars at drive through
+queue have front and end, inserted at end, removed from front
+(enqueue - insert) (dequeue - remove)
+
+- applications of queues
+used in prinets
+access to memory of shared resources
+web servers responding to requests
+computer applications
+some of computer algorithms
+
+- queues abstract data type (ADT)
+
+enqueue(object) - insert element
+dequeue() - remove & return element
+first() - returns first element
+len() - returns number of elements
+isEmpty() - whether queue is empty or not
+
+// Queues using arrays
+
+
+// Queues using Linked List
+
+
+// What are Double Ended Queues
+

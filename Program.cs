@@ -238,6 +238,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             /**/
+            /*
             stackLinkedList stackLinkedL = new stackLinkedList();
             stackLinkedL.push(6);
             stackLinkedL.push(3);
@@ -252,6 +253,26 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             stackLinkedL.display();
             Console.WriteLine("Element Top:" + stackLinkedL.peek());
             stackLinkedL.display();
+            Console.ReadKey();
+            */
+
+            /**/
+
+            // Queue array
+
+            arrayQueue arrayQueue = new arrayQueue(10); // we need to create a new object arrayQueue of type arrayQueue with 10 slots
+            arrayQueue.enqueue(5);
+            arrayQueue.enqueue(3);
+            arrayQueue.enqueue(7);
+            arrayQueue.display();
+            Console.WriteLine("Size: " + arrayQueue.lenght());
+            Console.WriteLine("Element Removed " + arrayQueue.dequeue());
+            Console.WriteLine("Is Empty?: " + arrayQueue.isEmpty());
+            arrayQueue.enqueue(8);
+            arrayQueue.enqueue(4);
+            arrayQueue.display();
+            Console.WriteLine("Size: " + arrayQueue.lenght());
+            Console.WriteLine("Is Empty?: " + arrayQueue.isEmpty());
             Console.ReadKey();
         }
     }

@@ -22,6 +22,11 @@ isEmpty() - whether queue is empty or not
 
 // Queues using arrays
 
+enqueue method - first we will check if the queue is full, if it is full we cannot insert and need to return, 
+if it is not full, then we can add the elements
+
+dequeue method won't take any parameters, first we need to check if the queue is empty, if it is empty, then we need to return, we cannot perform any action
+
 
 // Queues using Linked List
 

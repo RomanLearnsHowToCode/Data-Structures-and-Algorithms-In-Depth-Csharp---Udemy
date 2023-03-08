@@ -20,9 +20,9 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
     class linkedListQueues
     {
-        NodeQ front; // storing reference of front node
-        NodeQ rear; // storing reference of rear node
-        int size; 
+        private NodeQ front; // storing reference of front node
+        private NodeQ rear; // storing reference of rear node
+        private int size; 
 
         public linkedListQueues()
         {

@@ -34,4 +34,28 @@ insert at front or read, and remove at the front of rear, it is better to use th
 
 
 // What are Double Ended Queues
+double ended queues are also collection of objects
+supports insertion and deletion at both the front nad rear end of the queue
+
+pipe has got two ends open, front and rear, DEQueue structure (Double Ended) we can insert and remove from the front and reader
+
+waiting list in the restaurant
+- will enter restaurant
+- will see that there is no free space
+- person at the end of the end could leave the queue
+
+DeQue Abstract Data Type support following methods
+
+addFirst(object) - instert element at the front
+addLast(object) - inster element at the rear
+removeFirst() - remove element from the front and return element
+removeLast() - remove element from the read and return element
+
+first() - return element which is at front of the DEQue
+last() - return element which is at the end of the DEQue
+len() - return the number of elements
+isEmpty() - whether the DEque is empty or not
+
+to store the elements we can use arrays and linked list, and the ADT could be applied
+
 

@@ -277,6 +277,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
+            /*
             linkedListQueues linkliQ = new linkedListQueues();
             linkliQ.enqueue(5);
             linkliQ.enqueue(3);
@@ -295,6 +296,21 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             linkliQ.display();
             Console.WriteLine("Element removed " + linkliQ.dequeue());
             Console.WriteLine("Is empty? " + linkliQ.isEmpty());
+            Console.ReadKey();
+            */
+
+            doubleEndedQueues DEQueue = new doubleEndedQueues();
+            DEQueue.addFirst(5);
+            DEQueue.addFirst(3);
+            DEQueue.addLast(7);
+            DEQueue.addLast(12);
+            DEQueue.display();
+            Console.WriteLine("Size: " + DEQueue.length());
+            Console.WriteLine("Front Element Removed: " + DEQueue.removeFirst());
+            Console.WriteLine("Rear Element Removed: " + DEQueue.removeLast());
+            DEQueue.display();
+            Console.WriteLine("First Element: " + DEQueue.first());
+            Console.WriteLine("Last Element: " + DEQueue.last());
             Console.ReadKey();
         }
     }

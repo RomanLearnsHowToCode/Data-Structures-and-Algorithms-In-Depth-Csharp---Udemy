@@ -260,6 +260,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             // Queue array
 
+            /*
             arrayQueue arrayQueue = new arrayQueue(10); // we need to create a new object arrayQueue of type arrayQueue with 10 slots
             arrayQueue.enqueue(5);
             arrayQueue.enqueue(3);
@@ -273,6 +274,27 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             arrayQueue.display();
             Console.WriteLine("Size: " + arrayQueue.lenght());
             Console.WriteLine("Is Empty?: " + arrayQueue.isEmpty());
+            Console.ReadKey();
+            */
+
+            linkedListQueues linkliQ = new linkedListQueues();
+            linkliQ.enqueue(5);
+            linkliQ.enqueue(3);
+            linkliQ.enqueue(8);
+            linkliQ.enqueue(1);
+            Console.WriteLine("Size: " + linkliQ.lenghth());
+            linkliQ.display();
+            Console.WriteLine("Element removed " + linkliQ.dequeue());
+            Console.WriteLine("Is empty? " + linkliQ.isEmpty());
+            linkliQ.display();
+            Console.WriteLine("Element removed " + linkliQ.dequeue());
+            Console.WriteLine("Is empty? " + linkliQ.isEmpty());
+            linkliQ.display();
+            Console.WriteLine("Element removed " + linkliQ.dequeue());
+            Console.WriteLine("Is empty? " + linkliQ.isEmpty());
+            linkliQ.display();
+            Console.WriteLine("Element removed " + linkliQ.dequeue());
+            Console.WriteLine("Is empty? " + linkliQ.isEmpty());
             Console.ReadKey();
         }
     }

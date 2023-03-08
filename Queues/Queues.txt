@@ -29,6 +29,8 @@ dequeue method won't take any parameters, first we need to check if the queue is
 
 
 // Queues using Linked List
+queues using linked list can have insert and remove operations.
+insert at front or read, and remove at the front of rear, it is better to use the insert and remove at front of the queue because of time complexity of O(1)
 
 
 // What are Double Ended Queues

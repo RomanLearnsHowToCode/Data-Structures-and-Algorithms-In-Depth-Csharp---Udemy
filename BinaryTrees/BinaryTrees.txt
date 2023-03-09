@@ -1,0 +1,75 @@
+﻿// Tree Data Structure - its definitions and properties
+most important data structures in computing
+
+tree is a non linear data structure - in terms of organisational structures
+
+Tree data structures allows us to implement a number of algorithms much faster than compared to linear data structures such as arrays and linked lists
+Tree terminology is derived from familty tree, where we commonly use terminology as: Parent, Child, Ancestor, Descendand 
+
+tree consist of set of nodes
+parent child relationship though edges
+
+Parent COMPANY have child as Sales and Manufacruing and edges can be Domestic Sales or International, and for Manufacturing child the edge can be Phones
+
+Number of Nodes = N, Number of Edges = n-1
+
+Tree can be empty = tree which doesn't have any nodes, is known as empty trees
+
+// Trees - terminology
+terms used in trees data structures, in non empty tree, this means in trees contains nodes, 
+
+the main node is called ROOT node, other nodes in tree has got parents
+siblings - nodes which are members of same parent node are siblings.
+external node - is node which doesn't have any children, also known as leaf nodes
+internal node - node which has got one or more children
+edge - is pair of nodes, (U,V), edge has got always relationship between parent and child
+path - is a sequence of nodes such that two consecutive nodes forms an edge, will start from the root nodes, following the edges till the leaf node
+subtree - any part of tree or any children is considered as subtree - america is root of the subtree with children north america and south america
+forest - is a collection of trees, if we remove the root node, then this tree would break up into several trees
+
+// Height and Levels of Trees
+one of the most important terminology
+root - heigh 0, level 1, children of the root node are level2 and being considered as height 1, heigh are considered as edges of the tree
+
+// Degree of Node and Tree
+degree of a tree is the maximum degree of the node, it is not always the root node which can have the highest degree, it depends on amount of the children the parent 
+node have
+
+// Binary trees and its properties
+Binary tree is a tree with the following properties
+Every Node has at most two children
+Every child nodes is labelled as left child or right child
+Left child precedes right child in order of Nodes
+we can also define a binary tree as a tree with a degree of two
+Binary tree -> nodes degree - 0,1,2 
+if the binary tree have nodes, where each node have only left nodes, then it is called left skewed binary tree
+if the tree have only right nodes then the tree is right skewed binary tree
+
+how many nodes can be in a binary tree of height H?
+in a binary tree of height 2 we can have a maximum of 7 nodes
+there is a formula to count the maximum nodes by given height - 2 power height + 1, -1
+
+// Proper Binary Tree
+
+
+// Full Binary Tree
+
+// Complete Binary Tree
+
+// Full vs Complete vs Proper Binary Tree
+
+// Binary Tree Representation - Array Based
+
+// Binary Tree Representation - Linked Based
+
+// Traversing Binary Trees
+
+// Binary Trees Traversal - Preorder
+
+// Binary Trees Traversal - Inorder
+
+// Binary Trees Traversal - Postorder
+
+// Binary Trees Traversal - Level Order
+
+// Easy way of remembering Binary Trees Traversals

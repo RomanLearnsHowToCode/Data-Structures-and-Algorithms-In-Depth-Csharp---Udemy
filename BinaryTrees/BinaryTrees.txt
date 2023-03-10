@@ -50,11 +50,17 @@ in a binary tree of height 2 we can have a maximum of 7 nodes
 there is a formula to count the maximum nodes by given height - 2 power height + 1, -1
 
 // Proper Binary Tree
-
+proper binary tree - every node can have 0 or 2 children
 
 // Full Binary Tree
+full binary tree - every internal node has exactly 2 children and all leaf nodes are at same level
+even if parent node has got 2 children, and each child doesn't have any children, it is considered a full binary tree, imagine triangle from 3 nodes A B C where A is root,
+B and C are children
+
+there is a forumla for caltulating a full binary tree
 
 // Complete Binary Tree
+
 
 // Full vs Complete vs Proper Binary Tree
 

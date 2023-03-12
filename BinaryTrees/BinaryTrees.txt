@@ -60,7 +60,9 @@ B and C are children
 there is a forumla for caltulating a full binary tree
 
 // Complete Binary Tree
-
+are numbered from left to right without any gap
+gap means gap by numbered nodes, the tree can be incomplete, but cannot have gaps between nodes, such as 1 2 0 4 
+must be 1 2 3 0 to be complete
 
 // Full vs Complete vs Proper Binary Tree
 

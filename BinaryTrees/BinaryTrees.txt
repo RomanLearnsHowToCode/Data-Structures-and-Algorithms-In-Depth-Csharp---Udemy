@@ -71,8 +71,20 @@ nodes are being counted from lefty to right
 conecpt of complete binary trees is used in HEAPS data structure
 
 // Binary Tree Representation - Array Based
+if we are creating binary tree from array, then we need to specify the size of array, we need to count how many nodes the binary tree can have, 
+so we can store every and each element.
+
+We will store the elements in binary tree from index 1, not from 0, we need array of size 8 if we want to have binary tree of 7 nodes
+
+To store the nodes we should consider the levels of a tree, so root is number 1, then we store from left to right
+
+index is i, left child is i x 2, right child is i x 2 + 1
+
+the formulas are very important fo the operations, and will be also helpful, and will be used in heaps
 
 // Binary Tree Representation - Linked Based
+
+
 
 // Traversing Binary Trees
 

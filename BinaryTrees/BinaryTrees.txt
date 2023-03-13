@@ -65,6 +65,10 @@ gap means gap by numbered nodes, the tree can be incomplete, but cannot have gap
 must be 1 2 3 0 to be complete
 
 // Full vs Complete vs Proper Binary Tree
+explanation of full binary tree, complete binary tree and proper binary tree via examples of trees and nodes
+
+nodes are being counted from lefty to right
+conecpt of complete binary trees is used in HEAPS data structure
 
 // Binary Tree Representation - Array Based
 

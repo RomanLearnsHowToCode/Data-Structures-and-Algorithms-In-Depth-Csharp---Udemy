@@ -115,9 +115,26 @@ visit root, subtree and its children, then right subtree and its children from l
 if the tree is deeper, we need to break the binary tree into subtrees, and follow the recursion
 
 // Binary Trees Traversal - Inorder
+Visit Left Subtree recursively inorder
+Visit root
+Visit Right subtree recursively inorder
+
+Left node is visited first, followed by root and then right, so it is going from left to right 
+subtree will be visited from left to root to right as well
 
 // Binary Trees Traversal - Postorder
+Visit the left subtree recursively postorder
+Visit Right subtree recursively postorder
+Visit root
 
 // Binary Trees Traversal - Level Order
+level by level from top to bottom, from left to right, this is the simplest method to traverse the binary tree, most dificult and complex to implement into a programming language
 
 // Easy way of remembering Binary Trees Traversals
+
+A + B 
+A is left node, + is root, B is right node
+ 
+Pre order traversal: + A B
+In order traversal: A + B
+Post order traversal: A B +

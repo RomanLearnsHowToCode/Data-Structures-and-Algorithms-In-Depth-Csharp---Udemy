@@ -83,12 +83,36 @@ index is i, left child is i x 2, right child is i x 2 + 1
 the formulas are very important fo the operations, and will be also helpful, and will be used in heaps
 
 // Binary Tree Representation - Linked Based
+List is a sequence, nodes are elements of binary tree not in sequence, it is linked representation, not that it is linked list representation
 
-
+node in memory will have three members, element and links to left and right children
 
 // Traversing Binary Trees
+methods of traversing
+traversing is a technique to visit all elements in a data structure
+
+In linear data structure we can traverse elements from beginning to end or from end to beginning of the data structure
+
+Binary tree is non linear data structure
+
+we can use following methods to traverse through the binary tree
+
+- inorder traversal
+- preorder traversal
+- postorder traversal
+- level order traversal
+
 
 // Binary Trees Traversal - Preorder
+visit root of the binary tree or its subtree
+then visit the left subtree recursively preorder
+then visit the right subtree resursively preoder
+root -> left -> right
+
+preorder traversal
+
+visit root, subtree and its children, then right subtree and its children from left to right
+if the tree is deeper, we need to break the binary tree into subtrees, and follow the recursion
 
 // Binary Trees Traversal - Inorder
 

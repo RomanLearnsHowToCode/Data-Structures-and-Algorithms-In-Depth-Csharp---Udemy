@@ -1,0 +1,79 @@
+﻿// What are Binary Search Trees
+Binary search tree is a binary tree where all the elements in the subtree on the left side are smaller than the root, and on the right side are greater than the root
+We don't need to bother about the leaf nodes, as they don't have children
+
+- every node has a key
+- keys in left sub-tree of node are smaller than the key in the node
+- keys in right sub-tree of node are larger than the key in the node
+- left and right subtrees are also binary search trees
+
+properties of binary search trees
+- binary search trees will not have duplicate elements or nodes
+- inorder traversal will have list of elements in sorted order
+
+representation of binary search trees - not efficient due to the memory utilisation
+- can be represented via arrays or linked lists (links rather than lists)
+
+// Binary search trees - searching (concept)
+How to perfrom search operation
+left subtree smaller than node
+right subtree greater than the node
+
+for insertion or deletion we first need to search, then we can delete or insert
+- search from root
+if the root element is the one we are searching for, we would return 
+
+if the element is smaller than the node, then we need to search in left subtree, if greather than the node, then we need to search in right side
+
+in worst case the search algorithm will be O(n) where the n is height of tree
+we can use iterative or recursive functions 
+
+// Binary search trees - iterative search function
+
+function search(key) 
+troot = root - reference of root
+
+while (troot) then - move the reference till the leaf node
+we will check if the key equals the element in node - if key == troot.element then return True
+else if the key < troot.element then
+troot = troot.left 
+else if key > troot.element then
+troot = troot.right
+return false if we didn't find element
+
+// Binary search trees - recursive search function
+
+
+// Binary search trees - insertion (concept)
+
+
+// Binary search trees - iterative insert function
+
+
+// Binary search trees - recursive insert function
+
+
+// Traversing Binary Search Tree
+
+
+// Function for preorder traversal
+
+
+// Function for Postorder Traversal
+
+
+// Function for level order traversal 
+
+
+// Binary search tree - deletion
+
+
+// Binary search tree - deletion case node with one subtree
+
+// Binary search tree - deletion case-node with both subtrees
+
+// Count number of nodes in binary tree
+
+// Find height of binary tree
+
+// Performance and Problem of Binary Search Trees

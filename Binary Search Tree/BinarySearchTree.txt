@@ -41,14 +41,38 @@ else if key > troot.element then
 troot = troot.right
 return false if we didn't find element
 
-// Binary search trees - recursive search function
+we need to do comparisons on each level of tree, in worse case scenario we need to perform search at each degree (level) - O(n)
 
+// Binary search trees - recursive search function
+function rsearch(troot, key) 
+recursive - so we will checki if the function is aiming for root,
+
+if troot then
+if key == troot.element then
+return true
+
+else if key < troot.element then
+return rsearch (troot.left, key)
+
+else if key > troot.element then
+return rsearch (troot.right, key)
+
+else 
+return false
+
+O(n)
 
 // Binary search trees - insertion (concept)
+we cannot insert the node anywhere, we need to insert in the same manner as the searching
+
+if we want to insert a element, we need to first find the node, where the element should be insert
+the insertion would start at root
 
 
 // Binary search trees - iterative insert function
-
+will create function in which we will be creating temporary varibable
+we will point to root node, and then perform iterative search
+until we will find the right spot, where the node should be inserted, there we will create new node
 
 // Binary search trees - recursive insert function
 

@@ -74,12 +74,51 @@ will create function in which we will be creating temporary varibable
 we will point to root node, and then perform iterative search
 until we will find the right spot, where the node should be inserted, there we will create new node
 
-
 // Binary search trees - recursive insert function
+function rinsert (troot,e) 
+if troot then
+if e < troot.element then
+troot.left = rinsert (troot.left,e)
 
+else if e > troot.element then
+troot.right = rinsert (troot.right, e)
+
+else 
+n = Node(e)
+troot = n
+
+return troot
+
+function would first search where to insert the node, then it would insert it in way, that it would create a node
 
 // Traversing Binary Search Tree
 
+in order traversal
+pre order traversal
+post order traversal
+level order traversal
+
+In Order Traversal
+visit the left subree first, then the root, then right subtree
+
+left subtree from left child to root of the subtree and then right node of the subtree
+then visit the root
+and then the right subtree in same manner as left subtree
+
+
+Pre Order Traversal
+visit root, then left subtree, then left node of the subtree, then right node of the subtree
+then visit right root of subtree, then left child, and right child
+
+Post Order Traversal
+left child of the left subtree, then the right node of the left subtree, then the root of the left subtree
+then
+left child of the right subtree, then the right node of the right subtree, then the root node of the right subtree
+and then the root
+
+Level Order Traversal
+Root, left subtree node, right subtree node
+then left child of the left subtree node, right child of the left subtree node, left node of the right subtree, right child of the right subtree
 
 // Function for preorder traversal
 

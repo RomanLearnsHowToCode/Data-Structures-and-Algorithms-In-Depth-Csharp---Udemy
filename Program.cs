@@ -315,9 +315,18 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
-            BNTR BST = new BNTR();
-            
-
+            BinarySearchTree BinaryS = new BinarySearchTree();
+            BinaryS.insert(BinaryS.root, 50);
+            BinaryS.insert(BinaryS.root, 30);
+            BinaryS.insert(BinaryS.root, 80);
+            BinaryS.insert(BinaryS.root, 10);
+            BinaryS.insert(BinaryS.root, 40);
+            BinaryS.insert(BinaryS.root, 60);
+            BinaryS.insert(BinaryS.root, 80);
+            Console.WriteLine("Inorder Traversal");
+            BinaryS.inorder(BinaryS.root);
+            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }

@@ -13,8 +13,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
          
     */
 
-    class BNTR
-    {
+    // creating Node class
     public class NodeBST
     {
         public int element; // any data type possible
@@ -33,7 +32,9 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
     class BinarySearchTree
     {
-        NodeBST root; // declared root node
+
+        // variables are private by default, if not specified: https://stackoverflow.com/questions/31302825/inaccessible-due-to-its-protection-level
+        public NodeBST root; // declared root node
 
         // constructor
         public BinarySearchTree()
@@ -111,10 +112,5 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
 
         }
-
     }
-
-    }
-
-
 }

@@ -74,6 +74,7 @@ will create function in which we will be creating temporary varibable
 we will point to root node, and then perform iterative search
 until we will find the right spot, where the node should be inserted, there we will create new node
 
+
 // Binary search trees - recursive insert function
 
 

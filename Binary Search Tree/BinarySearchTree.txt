@@ -120,13 +120,28 @@ Level Order Traversal
 Root, left subtree node, right subtree node
 then left child of the left subtree node, right child of the left subtree node, left node of the right subtree, right child of the right subtree
 
+// Function for Inorder Traversal
+function inorder (troot) would parse the root node
+if troot is not empty, then
+
+inorder(troot.left)
+print(troot.element)
+
+inorder(troot.right)
+print(troot.element)
+
+
+
 // Function for preorder traversal
+
 
 
 // Function for Postorder Traversal
 
 
+
 // Function for level order traversal 
+
 
 
 // Binary search tree - deletion

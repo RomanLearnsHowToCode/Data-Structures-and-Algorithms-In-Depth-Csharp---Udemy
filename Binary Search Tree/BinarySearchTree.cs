@@ -42,6 +42,22 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             root = null;
         }
 
+        // in order traversal
+        public void inorder(NodeBST temproot)
+        {
+            // if it is not empty, then it have nodes
+            if (temproot != null)
+            {
+                // calling recursively the method
+                inorder(temproot.left);
+                Console.Write(temproot.element + " ");
+
+                // calling recursively right
+                inorder(temproot.right);
+            }
+
+        }
+
         // insert
         public void insert(NodeBST temproot, int e)
         {
@@ -97,20 +113,31 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
                 }
         }
 
-        // in order traversal
-        public void inorder(NodeBST temproot)
+        // recursive insert
+
+        public NodeBST insertx (NodeBST temproot, int e)
         {
-            // if it is not empty, then it have nodes
+            // find the temp root
             if(temproot != null)
             {
-                // calling recursively the method
-                inorder(temproot.left);
-                Console.Write(temproot.element + " ");
-
-                // calling recursively right
-                inorder(temproot.right);
+                if (e < temproot.element)
+                {
+                    temproot.left = insertx(temproot.left, e);
+                }
+                else if (e > temproot.element)
+                {
+                    temproot.right = insertx(temproot.right, e);
+                }
             }
 
+            // once the temproot is not null, we need to create node
+            else
+            {
+                NodeBST n = new NodeBST(e, null, null);
+                temproot = n;
+            }
+
+            return temproot;
         }
     }
 }

@@ -315,7 +315,11 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
-            BinarySearchTree BinaryS = new BinarySearchTree();
+            /*
+             Binary Search Tree implementation and inorder insert 
+             
+             */
+            /*BinarySearchTree BinaryS = new BinarySearchTree();
             BinaryS.insert(BinaryS.root, 50);
             BinaryS.insert(BinaryS.root, 30);
             BinaryS.insert(BinaryS.root, 80);
@@ -324,6 +328,23 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             BinaryS.insert(BinaryS.root, 60);
             BinaryS.insert(BinaryS.root, 80);
             Console.WriteLine("Inorder Traversal");
+            BinaryS.inorder(BinaryS.root);
+            Console.WriteLine();
+            Console.ReadKey();*/
+
+            /*
+             Binary Search Tree - recursive insert
+             */
+
+            BinarySearchTree BinaryS = new BinarySearchTree();
+            BinaryS.root = BinaryS.insertx(BinaryS.root, 50); // we need to first insert the root node
+            BinaryS.insertx(BinaryS.root, 30);
+            BinaryS.insertx(BinaryS.root, 80);
+            BinaryS.insertx(BinaryS.root, 10);
+            BinaryS.insertx(BinaryS.root, 40);
+            BinaryS.insertx(BinaryS.root, 60);
+            BinaryS.insertx(BinaryS.root, 90);
+            Console.WriteLine("In Order Traversal");
             BinaryS.inorder(BinaryS.root);
             Console.WriteLine();
             Console.ReadKey();

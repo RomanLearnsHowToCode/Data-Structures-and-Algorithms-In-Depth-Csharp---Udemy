@@ -130,11 +130,12 @@ print(troot.element)
 inorder(troot.right)
 print(troot.element)
 
-
-
 // Function for preorder traversal
-
-
+function preorder(root) - troot is temporary root, we cannot manipulate root of the binary tree at any circumstance
+if troot then - if troot is empty, then this function won't executre, if the root is not empty, then
+print(troot.element) - visit the root and print it
+preorder(troot.left)
+preorder(troot.right)
 
 // Function for Postorder Traversal
 

@@ -70,6 +70,10 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
         }
 
+        // postorder traversal
+
+
+
         // insert
         public void insert(NodeBST temproot, int e)
         {

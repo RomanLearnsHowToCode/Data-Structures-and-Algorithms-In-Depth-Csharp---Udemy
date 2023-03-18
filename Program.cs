@@ -347,6 +347,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("In Order Traversal");
             BinaryS.inorder(BinaryS.root);
             Console.WriteLine();
+            Console.WriteLine("PRE Order Traversal");
+            BinaryS.preorder(BinaryS.root);
             Console.ReadKey();
         }
     }

@@ -58,6 +58,18 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
         }
 
+        // preoder traversal
+
+        public void preorder(NodeBST temproot)
+        {
+            if (temproot != null)
+            {
+                Console.Write(temproot.element + " ");
+                preorder(temproot.left);
+                preorder(temproot.right);
+            }
+        }
+
         // insert
         public void insert(NodeBST temproot, int e)
         {

@@ -139,7 +139,11 @@ preorder(troot.right)
 
 // Function for Postorder Traversal
 
-
+function postorder will take parameter root
+if troot then
+postorder(troot.left)
+postorder(troot.right)
+print(troot.element)
 
 // Function for level order traversal 
 

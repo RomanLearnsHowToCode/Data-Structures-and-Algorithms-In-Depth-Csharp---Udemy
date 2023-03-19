@@ -166,11 +166,23 @@ if t.right then
 print(t.right.element)
 Q.enqueue(t.right)
 
-
 // Binary search tree - deletion
+We need to use search operation, 
 
+deletion is not as simple as insertion
+
+Possibilites of deletion
+Leaf Node
+One Subtree (Left or Right)
+Two Subtrees (Both Left and Right)
+
+
+// Binary search tree - deletion - leaf node
+
+Leaf Node - simple case
 
 // Binary search tree - deletion case node with one subtree
+
 
 // Binary search tree - deletion case-node with both subtrees
 

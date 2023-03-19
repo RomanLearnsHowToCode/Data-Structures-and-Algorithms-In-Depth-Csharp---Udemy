@@ -30,6 +30,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
     }
 
+
     class BinarySearchTree
     {
 
@@ -72,7 +73,22 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
         // postorder traversal
 
+        public void postorder(NodeBST temproot)
+        {
+            if (temproot != null)
+            {
+                postorder(temproot.left);
+                postorder(temproot.right);
+                Console.Write(temproot.element + " ");
+            }
+        }
 
+        // level order traversal
+
+        public void levelorder()// travel level by level, we need to store child of the node level by level
+        {
+
+        }
 
         // insert
         public void insert(NodeBST temproot, int e)
@@ -154,6 +170,57 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
 
             return temproot;
+        }
+
+        // Iterative search
+
+        public bool searchIterative(int key) // int key - parameter we are trying to return
+        {
+            NodeBST temproot = root;
+
+            // this while loop would execute and terminate, if we would find the key
+            while (temproot != null)
+            {
+                if(key == temproot.element)
+                {
+                    return true;
+                }
+                else if(key < temproot.element)
+                {
+                    temproot = temproot.left;
+                }
+                else if(key > temproot.element) 
+                {
+                    temproot = temproot.right;
+                }
+            }
+            return false; // if the element is not found, then return false
+        }
+
+        // recursive search 
+        public bool searchRecursive (NodeBST temproot, int key)
+        {
+            if (temproot != null)
+            {
+                if(key == temproot.element)
+                {
+                    Console.WriteLine("Element found: " + key);
+                    return true;
+                }
+                // if element not found and key is smaller than the temproot element then call recursive search again within left subtree
+                else if(key < temproot.element)
+                {
+                    return searchRecursive(temproot.left, key);
+                }
+
+                // if element not found and key is smaller than the temproot element then call recursive search again within right subtree
+                else if (key > temproot.element)
+                {
+                    return searchRecursive(temproot.right, key);
+                }
+            }
+            // element not found
+            return false;
         }
     }
 }

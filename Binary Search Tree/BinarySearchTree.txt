@@ -146,7 +146,25 @@ postorder(troot.right)
 print(troot.element)
 
 // Function for level order traversal 
+define fuctiion with name 
 
+function levelorder() - traverse level by level, need to store the children of nodes level by level, we can achieve this with help of queue
+
+Q = Queue()
+t = root - assign reference of root node
+print(t.element)
+Q.enqueue(t)
+
+while ! Q.isempty()
+t = Q.dequeue()
+
+if t.left then - if the node have child
+print t.left.element
+Q.enqueue (t.left)
+
+if t.right then
+print(t.right.element)
+Q.enqueue(t.right)
 
 
 // Binary search tree - deletion

@@ -349,6 +349,17 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine();
             Console.WriteLine("PRE Order Traversal");
             BinaryS.preorder(BinaryS.root);
+            Console.WriteLine();
+            Console.WriteLine("POST Order Traversal");
+            BinaryS.postorder(BinaryS.root);
+            Console.WriteLine();
+            Console.WriteLine("Iterative search");
+            Console.WriteLine("Search Result: " + BinaryS.searchIterative(60));
+            Console.WriteLine("Search Result: " + BinaryS.searchIterative(45));
+            Console.WriteLine("Search Recursive: " + BinaryS.searchRecursive(BinaryS.root, 45));
+            Console.WriteLine("Search Recursive: " + BinaryS.searchRecursive(BinaryS.root, 60));
+
+
             Console.ReadKey();
         }
     }

@@ -222,5 +222,81 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             // element not found
             return false;
         }
+
+        // deletetion 
+
+        public bool delete(int e)
+        {
+            NodeBST p = root;
+            NodeBST pp = null; // parent of the parent node
+
+            // searching for the element to be deleted 
+            while(p!=null && p.element != e)
+            {
+                pp = p; // reference the parent node to parent of parent
+                if(e < p.element)
+                {
+                    p = p.left;
+                }
+                else
+                {
+                    p = p.right;
+                }
+            }
+
+            // element we are deleting is present or not
+            if(p == null)
+            {
+                return false;
+            }
+
+            if(p.left != null && p.right != null)
+            {
+                NodeBST s = p.left;
+                NodeBST ps = p;
+
+                
+                while(s.right != null)
+                {
+                    ps = s;
+                    s = s.right;
+                }
+                p.element = s.element; // not deleting node, but replacing elements
+                p = s;
+                pp = ps;
+            }
+
+            // have left or right subtree
+            NodeBST c = null;
+
+            if(p.left != null)
+            {
+                c = p.left;
+            }
+            else
+            {
+                c = p.right;
+            }
+
+            // now we need to check if node we are deleting is root node
+            if (p == root)
+            {
+                root = null;
+            }
+
+            // case one and two in deletion
+            else
+            {
+                if(p == pp.left)
+                {
+                    pp.left = c;
+                }
+                else
+                {
+                    pp.right = c;
+                }
+            }
+            return true;
+        }
     }
 }

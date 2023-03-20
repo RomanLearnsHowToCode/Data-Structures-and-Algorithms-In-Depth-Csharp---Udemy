@@ -358,8 +358,9 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Search Result: " + BinaryS.searchIterative(45));
             Console.WriteLine("Search Recursive: " + BinaryS.searchRecursive(BinaryS.root, 45));
             Console.WriteLine("Search Recursive: " + BinaryS.searchRecursive(BinaryS.root, 60));
-
-
+            BinaryS.delete(50);
+            Console.WriteLine("In Order Traversal");
+            BinaryS.inorder(BinaryS.root);
             Console.ReadKey();
         }
     }

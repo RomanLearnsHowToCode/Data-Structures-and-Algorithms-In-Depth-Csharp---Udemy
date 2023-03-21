@@ -361,6 +361,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             BinaryS.delete(50);
             Console.WriteLine("In Order Traversal");
             BinaryS.inorder(BinaryS.root);
+            Console.WriteLine(" ");
+            Console.WriteLine("Number of nodes " + BinaryS.count(BinaryS.root));
             Console.ReadKey();
         }
     }

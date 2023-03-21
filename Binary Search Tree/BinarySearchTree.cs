@@ -298,5 +298,17 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
             return true;
         }
+
+        // count amount of nodes in tree
+        public int count(NodeBST temproot)
+        {
+            if (temproot != null)
+            {
+                int x = count(temproot.left);
+                int y = count(temproot.right);
+                return x + y + 1;
+            }
+            return 0;
+        }
     }
 }

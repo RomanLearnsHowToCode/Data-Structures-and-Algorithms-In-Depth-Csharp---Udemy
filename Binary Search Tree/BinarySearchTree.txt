@@ -187,7 +187,7 @@ Leaf Node - simple case
 // Binary search tree - deletion case-node with both subtrees
 
 // Count number of nodes in binary tree
-recursivelly counting nodes
+recursivelly counting nodes, level by level
 
 method function count (troot)
 if troot then
@@ -199,5 +199,6 @@ return x + y + 1
 return 0
 
 // Find height of binary tree
+
 
 // Performance and Problem of Binary Search Trees

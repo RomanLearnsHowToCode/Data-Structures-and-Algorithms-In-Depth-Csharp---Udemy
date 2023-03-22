@@ -310,5 +310,28 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
             return 0;
         }
+
+        // finding height of binary search tree, will return height of binary tree
+
+        public int height(NodeBST temproot)
+        {
+            // recursive call, find height of left subtree and right subtree on each level, and compare which is greater
+
+            if (temproot != null)
+            {
+                int x = height(temproot.left);
+                int y = height(temproot.right);
+
+                if(x > y)
+                {
+                    return x + 1;
+                }
+                else
+                {
+                    return y + 1;
+                }
+            }
+            return 0;
+        }
     }
 }

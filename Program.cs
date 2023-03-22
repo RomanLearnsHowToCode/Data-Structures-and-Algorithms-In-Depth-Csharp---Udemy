@@ -363,6 +363,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             BinaryS.inorder(BinaryS.root);
             Console.WriteLine(" ");
             Console.WriteLine("Number of nodes " + BinaryS.count(BinaryS.root));
+            Console.WriteLine("Height of BST is: " + (BinaryS.height(BinaryS.root)-1));
             Console.ReadKey();
         }
     }

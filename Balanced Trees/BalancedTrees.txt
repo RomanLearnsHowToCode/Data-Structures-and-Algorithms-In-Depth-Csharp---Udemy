@@ -23,6 +23,8 @@ AVL trees: Any binary search tree, that satisfies height-balance property
 balanced trees are counting the the nodes and children, if the subtree doesn't have left and right child, then it might cause disbalance,
 so the balanced factor is at most 1, (-1, 0, 1) , unbalanced tree: otherwise, such as 2 and more
 
+we dont ballance unbalanced tree, we insert or delete, after these operations we would do a processing operation to rebalance - known as rotation
+
 // AVL Tree Rotations for Insertion
 
 // AVL Tree - LL Rotation

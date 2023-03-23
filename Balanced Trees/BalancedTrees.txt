@@ -1,0 +1,46 @@
+﻿// Balanced Search Trees
+
+Binary search trees operations are:
+Searching, insertion, deletion - the average case is O(log n), the worst case is O(h)
+worst case is based on height of the tree, it is proportional to Number of Nodes -> O(n)
+
+Balanced Search Trees idea is
+
+- reduce the height of the binary search tree
+rotations or restructuring - O(1)
+modifies the relationship between parent - child
+balanced search trees: AVL Tree, Red-Black tree, splay tree
+
+// AVL trees
+Balanced Search Trees
+- better performance
+- Binary Search Tree operations to reshape, and reduce height
+- Height-Balance property or balance factor
+
+Height-balance property: for every node, height of choldren differ by at most 1
+AVL trees: Any binary search tree, that satisfies height-balance property
+
+balanced trees are counting the the nodes and children, if the subtree doesn't have left and right child, then it might cause disbalance,
+so the balanced factor is at most 1, (-1, 0, 1) , unbalanced tree: otherwise, such as 2 and more
+
+// AVL Tree Rotations for Insertion
+
+// AVL Tree - LL Rotation
+
+// AVL Tree - RR Rotation
+
+// AVL Tree - LR Rotation
+
+// AVL Tree - RL Rotation
+
+// AVL Tree Rotations after Deletion
+
+// Performance Analysis of AVL Trees
+
+// Red-Black Trees
+
+// Red-Black Trees - Restructuring
+
+// Red-Black Trees - Insertion
+
+// Red-Black Trees - Deletion

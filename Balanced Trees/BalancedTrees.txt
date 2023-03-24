@@ -27,13 +27,29 @@ we dont ballance unbalanced tree, we insert or delete, after these operations we
 
 // AVL Tree Rotations for Insertion
 
+rotation for inserting node, rotation are to rebalance the AVL tree after node insertion
+
+LL Rotation - left and left of the binary search tree, clock wise rotation of nodes 
+RR Rotation
+LR Rotation
+RL Rotation
+
+
 // AVL Tree - LL Rotation
+
+
 
 // AVL Tree - RR Rotation
 
+
+
 // AVL Tree - LR Rotation
 
+
+
 // AVL Tree - RL Rotation
+
+
 
 // AVL Tree Rotations after Deletion
 

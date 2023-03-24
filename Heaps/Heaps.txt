@@ -1,0 +1,30 @@
+﻿// Heaps
+
+// What are priority queues?
+
+- Queues are data structures with 
+collection of objects
+are FIFO
+example: customers waiting for service
+
+Priority queues:
+
+Collection of prioritized objects
+Insertion: According to the first come basis
+Removal: based on the priority of the objects
+Key is associated when element is inserted in the priority queues
+Element with minimum key will be next element to be removed
+
+// Heaps Data Structure
+
+Is a efficient priority queues utilisation
+
+- collection of objects or elements stored as a binary tree
+binary heap - also known as
+relation property - key in each node of the binary tree is greater than or equal to those in its children
+structural property - binary tree should be a complete binary tree
+Max Heap and Min Heap
+
+Relational property - the key of each node in binary tree is equal or greater than key
+Structureal property states that the binary tree must be complete tree
+

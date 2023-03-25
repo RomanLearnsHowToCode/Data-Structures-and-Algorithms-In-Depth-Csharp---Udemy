@@ -28,3 +28,12 @@ Max Heap and Min Heap
 Relational property - the key of each node in binary tree is equal or greater than key
 Structureal property states that the binary tree must be complete tree
 
+Heap has got certain properties, and need to specificaly designed, 
+
+operations of heaps
+
+ADT
+
+Insert - inest element in the heap
+DeleteMax - delete nad return the maximum element from the heap
+Max - return the maximum element from the heap

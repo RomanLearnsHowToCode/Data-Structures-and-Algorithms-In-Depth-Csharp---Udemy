@@ -37,3 +37,30 @@ ADT
 Insert - inest element in the heap
 DeleteMax - delete nad return the maximum element from the heap
 Max - return the maximum element from the heap
+
+// Heaps - insertion
+
+Element is inserted as a new node in the tree
+Structural property: new node is inserted after the last node
+Relational Property: perform up-heap bubbling
+
+when inserting nodes, we need to maintian the structual and relational relationships and properties, we need to restructuralise the tree and compare the nodes
+
+// Heaps - Insert Function
+
+function heap_inser(e) - will take element as input
+
+if csize == maxsize then
+print("No Space")
+Return
+
+csize = csize +1
+hi = csize
+whiel hi > 1 and e > data [hi /2]
+data[hi] = data[hi/2]
+hi = [hi/2]
+data[hi] = e
+
+heap data = array, of size 8, if heap should be of size 7
+
+up heap bubbling is performed if need to insert data and find the correct node space

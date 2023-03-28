@@ -64,3 +64,10 @@ data[hi] = e
 heap data = array, of size 8, if heap should be of size 7
 
 up heap bubbling is performed if need to insert data and find the correct node space
+
+// Heaps - deletion
+
+- element is removed from the root
+- structural property: root is replaced by the last node
+- relational property: perform down-heap bubbling
+

@@ -336,6 +336,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
              Binary Search Tree - recursive insert
              */
 
+            /*
+
             BinarySearchTree BinaryS = new BinarySearchTree();
             BinaryS.root = BinaryS.insertx(BinaryS.root, 50); // we need to first insert the root node
             BinaryS.insertx(BinaryS.root, 30);
@@ -365,6 +367,21 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Number of nodes " + BinaryS.count(BinaryS.root));
             Console.WriteLine("Height of BST is: " + (BinaryS.height(BinaryS.root)-1));
             Console.ReadKey();
+            */
+
+            // Heap
+
+            Heaps heap = new Heaps();
+            heap.insert(25);
+            heap.insert(14);
+            heap.insert(2);
+            heap.insert(20);
+            heap.insert(10);
+            heap.display();
+            heap.insert(40); // when inserted element, which is greater than root (was 25), the bubbling operation would trigger
+            heap.display(); // and it would rearange the heap
+            Console.ReadKey();
+
         }
     }
 }

@@ -380,6 +380,9 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             heap.display();
             heap.insert(40); // when inserted element, which is greater than root (was 25), the bubbling operation would trigger
             heap.display(); // and it would rearange the heap
+            int element = heap.deleteMax();
+            Console.WriteLine("Element deleted:" + element);
+            heap.display(); // and it would rearange the heap
             Console.ReadKey();
 
         }

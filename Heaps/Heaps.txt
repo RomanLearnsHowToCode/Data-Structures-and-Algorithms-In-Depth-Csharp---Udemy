@@ -71,3 +71,30 @@ up heap bubbling is performed if need to insert data and find the correct node s
 - structural property: root is replaced by the last node
 - relational property: perform down-heap bubbling
 
+delete node by deleting root, the last node in the tree will replace the root, so we won't lose the linking, after this down-heap bubbling would be performed 
+
+deleteMax() - root node deletion
+
+down heap bubling must be performed on a higher child of root node, if there is a left tree with value 15, and right child with value 20, then we will be targeting the value 20
+and swap the nodes, to satisfy relational property
+
+function deleteMax()
+e = data[1]
+data[1] = data[csize]
+data[csize] = null
+czsize = csize -1
+i =1, j = i*2
+
+while j <= csize then
+
+if data[j] < data[j+1] then
+j = j+1
+
+if data[i] < data[j] then
+temp = data[i]
+data[i] = data[j]
+data[j] = temp
+i = j
+j = i *2
+else
+break

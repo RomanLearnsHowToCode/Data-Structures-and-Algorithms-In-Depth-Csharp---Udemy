@@ -82,5 +82,47 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
             Console.WriteLine();
         }
+
+        public int deleteMax()
+        {
+            // check if is empty
+            if (isEmpty())
+            {
+                Console.WriteLine("Heap is Empty");
+                return -1;
+            }
+            int e = data[1];
+            data[1] = data[csize];
+            data[csize] = -1;
+            csize = csize - 1;
+
+            // downheap bubling
+
+            int i = 1;
+            int j = i * 2;
+
+            while(j <= csize)
+            {
+                //which child is greater
+                if(data[j] < data[j + 1])
+                {
+                    j = j + 1;
+                }
+
+                // relational property of heaps
+                if(data[i] < data[j])
+                {
+                    int temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                    j = i * 2;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return e;
+        }
     }
 }

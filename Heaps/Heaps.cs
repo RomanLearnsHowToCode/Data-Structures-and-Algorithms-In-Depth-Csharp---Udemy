@@ -124,5 +124,24 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
             return e;
         }
+
+        // Heaps sort
+
+        public void heapSort(int[] A, int n)
+        {
+            Heaps heaps = new Heaps();
+            for (int i=0; i<n; i++)
+            {
+                heaps.insert(A[i]);
+            }
+            int k = n - 1;
+
+            for(int i = 0; i < n; i++)
+            {
+                A[k] = heaps.deleteMax();
+                k = k - 1;
+            }
+        }
+
     }
 }

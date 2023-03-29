@@ -1,0 +1,39 @@
+﻿// hashing
+
+- idea behind hashing is technique is to provide better performance for searching, inserting nad deleting elements from collection using a hash table
+
+How fast is searching?
+
+Linear Search - O(n)
+Binary Search - O(log n)
+Binary Search Tree - O(h) - O(log n)
+Hashing - O(1) 
+
+Hash table is used to store the data or elements
+Hash function maps elements to corresponding indicies
+
+elements or keys = [3,5,8,9,6,2]
+
+Ideally we would need hash table, which would store key to each element it means array of 12 slots for example of 6 keys
+
+the elements would be stored at corresponding indexes of the array, key 3 will be stored at index 3 of the hash table
+hashing is giving us way better search performance
+
+- compression hashing - using modulo 10 to compress the array size, 54 will be stored at index 4, if 64 should be inserted then there will be collision
+
+- Collision - when more than one key maps to the same index in hash table
+Collision handling
+
+Chaining
+Open Addressing
+ - Linear Probing
+ - Quadratic Probing
+ - Double hashing
+
+// Chaining - Collision Detection Scheme
+
+// Linear probing
+
+// Quadratic probing
+
+// Double hashing,

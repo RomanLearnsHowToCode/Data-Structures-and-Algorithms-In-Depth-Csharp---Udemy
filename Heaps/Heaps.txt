@@ -98,3 +98,33 @@ i = j
 j = i *2
 else
 break
+
+// heap sorting 
+
+- priority queues
+
+- uses heaps data structure
+- insert elements in the heap
+- perform deletion until the heap is empty
+- store deleted elements from the heapback into the array
+
+A = [20,14,2,15,10,21] - Heap = [20,14,2,15 (when insterting element 15 up heap sort must be performed, violation of relation property), ]
+
+// heap sort - algorithm
+
+algorithm heapsort(A,n) - A = [20,14,2,15,10,21]
+H = heap()
+
+loop to perform traversing
+for i=0; i < n; i++
+H.insert(A[i])
+
+k = n-1
+
+for i=o, i < h.current_size, i++
+A[k] = H.deletemax()
+k = k-1
+
+complexity is O(n log n)
+
+

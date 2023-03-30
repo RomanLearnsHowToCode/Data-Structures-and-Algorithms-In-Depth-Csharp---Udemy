@@ -31,6 +31,9 @@ Open Addressing
  - Double hashing
 
 // Chaining - Collision Detection Scheme
+54 % 10 = 4 (54 / 10 = 5, remainder is 4) remainder will be then stored at index 4 (54 will be stored at index 4) 
+64 % 10 = 4 - collision, as 54 is already stored at index 4, a new node will be added to index 4, so there will be now stored 54 and 64
+
 
 // Linear probing
 

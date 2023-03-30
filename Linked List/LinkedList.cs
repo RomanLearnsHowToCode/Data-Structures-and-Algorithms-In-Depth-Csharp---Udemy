@@ -210,5 +210,33 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             return -1; // we have not found the element
         }
 
+        public void insertsorted(int e)
+        {
+            Node newest = new Node(e, null);
+            if (isEmpty())
+                head = newest;
+            else
+            {
+                Node p = head;
+                Node q = head;
+                while (p != null && p.element < e)
+                {
+                    q = p;
+                    p = p.next;
+                }
+                if (p == head)
+                {
+                    newest.next = head;
+                    head = newest;
+                }
+                else
+                {
+                    newest.next = q.next;
+                    q.next = newest;
+                }
+            }
+            size = size + 1;
+        }
+
     }
 }

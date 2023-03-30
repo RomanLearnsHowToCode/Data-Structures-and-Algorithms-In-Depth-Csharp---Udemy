@@ -371,6 +371,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             // Heap
 
+            /*
             Heaps heap = new Heaps();
             heap.insert(25);
             heap.insert(14);
@@ -383,6 +384,35 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             int element = heap.deleteMax();
             Console.WriteLine("Element deleted:" + element);
             heap.display(); // and it would rearange the heap
+            Console.ReadKey();
+            */
+
+            //Chain hashing
+            /*
+            ChainHashing hash = new ChainHashing();
+            hash.insert(54);
+            hash.insert(78);
+            hash.insert(64);
+            hash.insert(92);
+            hash.insert(34);
+            hash.insert(86);
+            hash.insert(28);
+            hash.display();
+            Console.WriteLine("Element found: " + hash.search(54));
+            Console.ReadKey();
+            */
+
+            // Linear probe hashing
+            HashLinearProbe hashLinear = new HashLinearProbe();
+            hashLinear.insert(54);
+            hashLinear.insert(78);
+            hashLinear.insert(64);
+            hashLinear.insert(92);
+            hashLinear.insert(34);
+            hashLinear.insert(86);
+            hashLinear.insert(28);
+            hashLinear.display();
+            Console.WriteLine("Element found " + hashLinear.search(54));
             Console.ReadKey();
 
         }

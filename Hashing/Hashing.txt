@@ -34,9 +34,68 @@ Open Addressing
 54 % 10 = 4 (54 / 10 = 5, remainder is 4) remainder will be then stored at index 4 (54 will be stored at index 4) 
 64 % 10 = 4 - collision, as 54 is already stored at index 4, a new node will be added to index 4, so there will be now stored 54 and 64
 
+Dealing with collision is basically arrays or arrays, hash table can be a array of elements, and each "slot" of the hashtable can store multiple elements
+
+If searching in hashtable -> h * x 10
+
+Load factor - n / s
+n = number of elements in the array
+
+on average there will be 5 elements stored on each index
+
+complexity of search algorithm
+
+if the Load factor is 5 - on average we will need 5 comparisons for each index
+
+- O(1)
+- O(n/N)
+
+We can use any other hash function, but the load factor changes
+
+Selecting the hash function is important to handle the complexity
 
 // Linear probing
+Collision handling scheeme
+
+Open Addressing Scheme
+Insert element in the next available index, if cell is already occupied
+
+h(x) = x % 10 - if the index is free
+h`(x) = (h(x)) % 10 - if the index is occupied
+h`(x) = (h(x) + 1) %  10 - if even the one next to the index is occupied
+h`(x) = (h(x) + 2) %  10 - if even the one next to the index is occupied
+h`(x) = (h(x) + 3) %  10 - if even the one next to the index is occupied
+
+h`(x) = (h(x) + i) % 10, for i = 0,1,2....
+
+let's say that we have got following elements;
+54,78,64,92,34,86,28
+
+hash table inserting 54
+h`(54) = (4 + 0) % 10 = 4 - will store key at index 4
+h`(64) = (4 + 0) % 10 = 4 - collision
+h`(64) = (4 + 1) % 10 = 5 - will store key at index 5
+h`(34) = (4 + 0) % 10 = 4 - collision
+h`(34) = (4 + 1) % 10 = 5 - collision
+h`(34) = (4 + 2) % 10 = 6 - will store key at index 6
+h`(86) = (6 + 0) % 10 = 6 - collision
+h`(86) = (6 + 1) % 10 = 7 - will store key at index 7
+
+Linear probing - Load Factor cannot be greater than 1
+Load factor = 7 / 10 = 0.7
+
+We need to select use the hash function to have the Linear Factor < 0.5 (less than 0.5)
 
 // Quadratic probing
+Collision scheme
 
-// Double hashing,
+open addressing scheme
+insert element at the next Quadratically available index, if cell is already occupied, we will try to insert to next slot
+
+h(x) = x % 10
+h`(x) = (h(x) + i2) % 10
+for i = 0,1,2,
+
+i squared
+
+// Double hashing

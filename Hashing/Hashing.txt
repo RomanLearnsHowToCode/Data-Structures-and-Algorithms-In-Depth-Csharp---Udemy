@@ -98,4 +98,11 @@ for i = 0,1,2,
 
 i squared
 
+quadratic: if the index is occupied, then the calculation would be i squared, and if the squared position is occupied, then this would be +1 and then squared
+I would say that this would take a lot of space in memory
+
 // Double hashing
+- open addressing scheme
+- insert element using another hash function, if cell is already occupied
+
+interesting formula.. 

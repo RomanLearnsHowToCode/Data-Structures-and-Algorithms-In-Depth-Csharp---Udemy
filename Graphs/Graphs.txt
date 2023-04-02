@@ -1,0 +1,37 @@
+﻿// GRAPHS - introduction
+
+- graphs represents relationship between objects
+- collection of objects along with pairwise connection between objects
+
+road network -> cities are objects -> pair wise relationship between objects are represented by roads 
+
+- objects are vertecies, objects are edges 
+
+airports are objects -> fly parths are vertices 
+
+- graph is a collection of object called as Vertices and together with relationship between them called as EDGES
+
+Graph (G) = {V,E}
+
+- each edge in the graph joins two vertices
+- Vertices (V) = {A,B,C,D}
+- Edges (E) = {A -> B, A -> D, B -> C, B -> D, C -> D}
+
+Directed Edge - An Edge (u,v) is directed if pair (u,v) is ordered, with U preceding V, Edge is oriented or Direction
+Undirected Ege - An Ege (u,v) is undirected if pair (u,v) is not ordered, Edge has no orientation
+Weighted Edge - Cost or weight is assigned to each edge (u,v)
+Weighted Undirected Edge - without direction, but weighted
+Weighted Directed Edge - with direction and weights
+
+End Vertices - Two vertices joined by an edge - origin -> destination
+Adjacent Vertices - Two vertices are adjacent if there is an edge between them
+Incident Edge - if vertex is one of the end points
+
+Outgoing Edge - origin is the vertex
+Incoming Edge - destination is the vertex
+
+Self loop - if both the end points are the same
+Parallel Edges - edge from u to v (u,v) as well as an edge from v to u (v,u)
+
+// Degree of a Vertex
+

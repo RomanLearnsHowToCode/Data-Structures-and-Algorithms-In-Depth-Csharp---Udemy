@@ -87,3 +87,15 @@ imagine two graphs, if two graphs contain same edges, then we say that these are
 - indegree(u) - returns the indegree of the vertex u
 - outdegree(u) - returns the outdegree of the vertex u
 
+// GRAPHS - REPRESENTATION
+
+- A graph can be represented using different data structures
+
+- Edge List: Maintains list of all edges
+- Adjacency List: For each Vertex, separate list of edges is maintaned
+- Adjacency Matrix: Maintains a matrix of vertices, where each cell stores the refernce to the edge.
+
+// EDGE LIST REPRESENTATION
+
+- Edge list - maintains list of all edges
+Vertex - stored in list and Edges are stored in list as well, linked list or doubly linked list

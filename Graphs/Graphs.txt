@@ -35,3 +35,55 @@ Parallel Edges - edge from u to v (u,v) as well as an edge from v to u (v,u)
 
 // Degree of a Vertex
 
+- degree of vertex -> dev(v) - number of edges
+- in degree and out degree
+
+so in plain english, if multiple paths are pointing at a edge, then that is the degree of the vertex
+IN degree says how many paths are pointing toward that edge, and out degree says how many paths are pointing outward the edge
+
+// PATH and CYCLE
+
+GRAPH - A B C D edges
+
+- path - sequence of edges starting at one vertex and edning at another vertex
+- there can be several paths in graph
+
+weighted undirected graph
+
+
+weighted directed graph
+- paths in weighted directed graph have direction
+
+cycling through the graph 
+- Starting at position A going though all the edges A -> B -> C -> D -> A, but can be also A -> B -> D -> A
+
+Directed acyclic graph 
+-> whern there are no cycles in a directed graph
+
+// Subgraphs and Connected components
+
+- subgraph is a graph whose vercies and edges are subsets of vercies and edges of another graph
+
+imagine two graphs, if two graphs contain same edges, then we say that these are subsets
+
+- connected components - connected subgraphs are known as connected components
+
+- articulation point - verte whose removal results in connected components
+- strongly connected graph - all the vertices are reachable from any vertex
+
+// GRAPHS - ADT
+
+- a graph is a collection of vertices and edges
+
+- create(n) - creates graph with n vertices and no edges
+- insert_edge(u, v, w = 1) - creates edge from u to v, storing weight w (by default 1)
+- remove_edge(u,v) - deletes edge from u to v
+- exist_edge(u, v) - returns true if edge exists between u and v, else false
+- vertex_count() - returns number of vertices in the graph
+- edge_count() - returns number of edges in the graph
+- vertices() - returns all the vertices of the graph
+- edges() - returns all the edges of the graph
+- degree(u) - returns the degree of the vertex u
+- indegree(u) - returns the indegree of the vertex u
+- outdegree(u) - returns the outdegree of the vertex u
+

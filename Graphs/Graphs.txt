@@ -120,8 +120,34 @@ Space complexity: O(n+m)
 
 // Adjacency List Representation 
 
-Adjacency List: for each vertex, separate list of edges is maintanted - more efficient, all edges can be easily accessed
+Adjacency List: for each vertex, separate list of edges is maintanted - more efficient, all edges can be easily accessed, is array of list
 
 Vetices
 Each list contain 
-V -> 
+
+Edges and vertices are stored in list / array
+
+The Adjacency list also depends on directed or undirected graphs
+
+
+// Graphs - Adjacency Matrix Representation
+
+- Adjacency Matrix: maintains a matrix of vertices, where each cell stores the reference to the edge
+
+rows and colums 
+
+Adjacency Matrix Time and Space complexity
+
+Operation:				Time Complexity
+insert_edge(u,v, w=1)   O(1)
+remove_edge(u,v)		O(1)
+exist_edge(u,v)			O(1)
+vertex_count()			O(1)
+edge_count()			O(1)
+vertices()				O(n)
+edges()					O(m)
+degree(u)				O(n)
+
+the biggest advantage of this method is that the data can be accessed very easily
+
+space complexity: O(n x n) = O(n2) - worse than the other representations

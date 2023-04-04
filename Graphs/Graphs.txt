@@ -99,3 +99,29 @@ imagine two graphs, if two graphs contain same edges, then we say that these are
 
 - Edge list - maintains list of all edges
 Vertex - stored in list and Edges are stored in list as well, linked list or doubly linked list
+
+we can store references from edges to vertexes
+
+Graphs - Edge List Performance
+
+Vertices: N; Edges: M;
+
+Operation:				Time Complexity
+insert_edge(u,v, w=1)   O(1)
+remove_edge(u,v)		O(1)
+exist_edge(u,v)			O(m)
+vertex_count()			O(1)
+edge_count()			O(1)
+vertices()				O(n)
+edges()					O(m)
+degree()				O(m)
+
+Space complexity: O(n+m)
+
+// Adjacency List Representation 
+
+Adjacency List: for each vertex, separate list of edges is maintanted - more efficient, all edges can be easily accessed
+
+Vetices
+Each list contain 
+V -> 

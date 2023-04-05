@@ -151,3 +151,19 @@ degree(u)				O(n)
 the biggest advantage of this method is that the data can be accessed very easily
 
 space complexity: O(n x n) = O(n2) - worse than the other representations
+
+// Graphs - Summary of Performance
+
+
+						Edge List		Adjacency List		Adjacency Matrix
+Space complexity		O(n + m)		O(n+m)					O(n2)
+
+insert_edge(u,v, w=1)   O(1)				O(1)				O(1)
+remove_edge(u,v)		O(1)				O(1)				O(1)
+exist_edge(u,v)			O(m)				O(min(du,dv))		O(1)
+vertex_count()			O(1)				O(1)				O(1)
+edge_count()			O(1)				O(1)				O(1)
+vertices()				O(n)				O(n)				O(n)
+edges()					O(m)				O(m)				O(m)
+degree(u)				O(m)				O(1)				O(n)
+

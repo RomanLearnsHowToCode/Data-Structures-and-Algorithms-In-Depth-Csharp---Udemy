@@ -403,6 +403,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             // Linear probe hashing
+
+            /*
             HashLinearProbe hashLinear = new HashLinearProbe();
             hashLinear.insert(54);
             hashLinear.insert(78);
@@ -414,6 +416,33 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             hashLinear.display();
             Console.WriteLine("Element found " + hashLinear.search(54));
             Console.ReadKey();
+            */
+
+            // undirected graphs implementation
+
+            Graphs undirectedG = new Graphs(4); // 4 vertices of undirected graph
+            Console.WriteLine("Graphs Adjacency Matrix");
+            undirectedG.display();
+            Console.WriteLine("Vertices: " + undirectedG.vertexCount());
+            Console.WriteLine("Edges Count: " + undirectedG.edgeCount());
+            undirectedG.insertEdge(0, 1, 1); //
+            undirectedG.insertEdge(0, 2, 1); // 
+            undirectedG.insertEdge(1, 0, 1); // 
+            undirectedG.insertEdge(1, 2, 1); // 
+            undirectedG.insertEdge(2, 0, 1); // 
+            undirectedG.insertEdge(2, 1, 1); // 
+            undirectedG.insertEdge(2, 3, 1); //
+            undirectedG.insertEdge(3, 2, 1); //
+            undirectedG.display();
+            Console.WriteLine("Edges Count: " + undirectedG.edgeCount());
+            Console.WriteLine("Vertices: " + undirectedG.vertexCount());
+            undirectedG.edges();
+            Console.WriteLine("Edge between 1--3: " + undirectedG.existEdge(1, 3));
+            Console.WriteLine("Edge between 1--2: " + undirectedG.existEdge(1, 2));
+
+            Console.ReadKey();
+
+            // 4 rows 4 colums
 
         }
     }

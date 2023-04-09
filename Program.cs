@@ -420,6 +420,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             // undirected graphs implementation
 
+            /*
             Graphs undirectedG = new Graphs(4); // 4 vertices of undirected graph
             Console.WriteLine("Graphs Adjacency Matrix");
             undirectedG.display();
@@ -439,10 +440,79 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             undirectedG.edges();
             Console.WriteLine("Edge between 1--3: " + undirectedG.existEdge(1, 3));
             Console.WriteLine("Edge between 1--2: " + undirectedG.existEdge(1, 2));
+            undirectedG.removeEdge(1, 2);
+            Console.WriteLine("Graphs Adjacency Matrix");
+            undirectedG.display();
+            Console.ReadKey();
+            */
+            // 4 rows 4 colums
 
+            // weighted undirected graph implementation
+            /*
+             Difference between weighted and unweighted graph we add value to the edges
+            undirectedG.insertEdge(0,1,26);
+            */
+
+            /*
+            Graphs undirectedGWeighted = new Graphs(4); // 4 vertices of undirected graph
+            Console.WriteLine("Graphs Adjacency Matrix");
+            undirectedGWeighted.display();
+            Console.WriteLine("Vertices: " + undirectedGWeighted.vertexCount());
+            Console.WriteLine("Edges Count: " + undirectedGWeighted.edgeCount());
+            undirectedGWeighted.insertEdge(0, 1, 26); //
+            undirectedGWeighted.insertEdge(0, 2, 16); // 
+            undirectedGWeighted.insertEdge(1, 0, 26); // 
+            undirectedGWeighted.insertEdge(1, 2, 12); // 
+            undirectedGWeighted.insertEdge(2, 0, 16); // 
+            undirectedGWeighted.insertEdge(2, 1, 12); // 
+            undirectedGWeighted.insertEdge(2, 3, 8); //
+            undirectedGWeighted.insertEdge(3, 2, 8); //
+            undirectedGWeighted.display();
+            Console.WriteLine("Edges Count: " + undirectedGWeighted.edgeCount());
+            Console.WriteLine("Vertices: " + undirectedGWeighted.vertexCount());
+            undirectedGWeighted.edges();
+            Console.WriteLine("Edge between 1--3: " + undirectedGWeighted.existEdge(1, 3));
+            Console.WriteLine("Edge between 1--2: " + undirectedGWeighted.existEdge(1, 2));
+            undirectedGWeighted.removeEdge(1, 2);
+            Console.WriteLine("Graphs Adjacency Matrix");
+            undirectedGWeighted.display();
+            Console.ReadKey();
+            */
+
+            // Directed Graph
+            /*
+             Edges 
+
+
+             
+             */
+
+            Graphs directedG = new Graphs(4); // 4 vertices of undirected graph
+            Console.WriteLine("Graphs Adjacency Matrix");
+            directedG.display();
+            Console.WriteLine("Vertices: " + directedG.vertexCount());
+            Console.WriteLine("Edges Count: " + directedG.edgeCount());
+            directedG.insertEdge(0, 1, 1); //
+            directedG.insertEdge(0, 2, 1); // 
+            directedG.insertEdge(1, 2, 1); // 
+            directedG.insertEdge(2, 3, 1); // 
+            directedG.display();
+            Console.WriteLine("Edges Count: " + directedG.edgeCount());
+            Console.WriteLine("Vertices: " + directedG.vertexCount());
+            directedG.edges();
+            Console.WriteLine("Edge between 1--3: " + directedG.existEdge(1, 3));
+            Console.WriteLine("Edge between 1--2: " + directedG.existEdge(1, 2));
+            Console.WriteLine("Degree of Vertex 2: " + (directedG.indegree(2) + directedG.outdegree(2)));
+            Console.WriteLine("In-Degree of Vertex 2: " + (directedG.indegree(2) + directedG.outdegree(2)));
+            Console.WriteLine("Out-Degree of Vertex 2: " + ( directedG.outdegree(2)));
+            Console.WriteLine("Graphs Adjacency Matrix");
+            directedG.display();
+            directedG.edges();
             Console.ReadKey();
 
-            // 4 rows 4 colums
+            // Weighted Directed Graph
+
+
 
         }
     }

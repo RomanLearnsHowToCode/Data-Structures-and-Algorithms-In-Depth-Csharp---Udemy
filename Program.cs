@@ -421,7 +421,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             // undirected graphs implementation
 
             /*
-            Graphs undirectedG = new Graphs(4); // 4 vertices of undirected graph
+            Graphs undirectedG = new Graphs(4); // 4 
             Console.WriteLine("Graphs Adjacency Matrix");
             undirectedG.display();
             Console.WriteLine("Vertices: " + undirectedG.vertexCount());
@@ -454,7 +454,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             */
 
             /*
-            Graphs undirectedGWeighted = new Graphs(4); // 4 vertices of undirected graph
+            Graphs undirectedGWeighted = new Graphs(4); // 4 vertices
             Console.WriteLine("Graphs Adjacency Matrix");
             undirectedGWeighted.display();
             Console.WriteLine("Vertices: " + undirectedGWeighted.vertexCount());
@@ -487,7 +487,8 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
              
              */
 
-            Graphs directedG = new Graphs(4); // 4 vertices of undirected graph
+            /*
+            Graphs directedG = new Graphs(4); // 4 vertices
             Console.WriteLine("Graphs Adjacency Matrix");
             directedG.display();
             Console.WriteLine("Vertices: " + directedG.vertexCount());
@@ -509,9 +510,36 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             directedG.display();
             directedG.edges();
             Console.ReadKey();
+            */
 
             // Weighted Directed Graph
 
+            /*
+            Graphs weightedDirectedG = new Graphs(4); // 4 vertices
+            Console.WriteLine("Graphs Adjacency Matrix");
+            weightedDirectedG.display();
+            Console.WriteLine("Vertices: " + weightedDirectedG.vertexCount());
+            Console.WriteLine("Edges Count: " + weightedDirectedG.edgeCount());
+            weightedDirectedG.insertEdge(0, 1, 26); //
+            weightedDirectedG.insertEdge(0, 2, 16); // 
+            weightedDirectedG.insertEdge(1, 2, 12); // 
+            weightedDirectedG.insertEdge(2, 3, 8); // 
+            weightedDirectedG.display();
+            Console.WriteLine("Edges Count: " + weightedDirectedG.edgeCount());
+            Console.WriteLine("Vertices: " + weightedDirectedG.vertexCount());
+            weightedDirectedG.edges();
+            Console.WriteLine("Edge between 1--3: " + weightedDirectedG.existEdge(1, 3));
+            Console.WriteLine("Edge between 1--2: " + weightedDirectedG.existEdge(1, 2));
+            Console.WriteLine("Degree of Vertex 2: " + (weightedDirectedG.indegree(2) + weightedDirectedG.outdegree(2)));
+            Console.WriteLine("In-Degree of Vertex 2: " + (weightedDirectedG.indegree(2) + weightedDirectedG.outdegree(2)));
+            Console.WriteLine("Out-Degree of Vertex 2: " + (weightedDirectedG.outdegree(2)));
+            Console.WriteLine("Graphs Adjacency Matrix");
+            weightedDirectedG.display();
+            weightedDirectedG.edges();
+            Console.ReadKey();
+            */
+
+            // 
 
 
         }

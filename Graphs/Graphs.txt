@@ -167,3 +167,38 @@ vertices()				O(n)				O(n)				O(n)
 edges()					O(m)				O(m)				O(m)
 degree(u)				O(m)				O(1)				O(n)
 
+// Graph traversals
+
+- graph is a non linear data structure - we cannot use linear search techniques
+- traversal is a systematic procedure of exploring a graph
+- exploring: examiing all the vertices and edges of the graph
+- efficient traversal: visits to all vertices and edges is in linear time
+
+- traversal
+computing a path from one vertex to another vertex
+compute path to reach all other vertices
+find whether a graph is connected
+computing connected components of the graph
+computing cycle in a graph
+computing spanning tree of the graph
+
+- graphs traversal - directed graphs
+computing direct path from one vertex to another vertex
+finding all the vertices that can be reachable from a given vertex
+determine whether a graph is strongly connected
+determine whether a graph si acyclic
+
+Graph traversal algorithms
+
+Breadth-First Search
+Depth-First Search
+
+// Breadth-First Search
+
+Breadth-First Search subdivides the vertices into levels and proceeds in rounds
+Starts at a vertex, which is considered at level 0
+Identifies all the vertices reachable from starts vertex at level 1, marks them visited
+In next round, identifies new vertices reachable from level 1 vertices which are not yet visited, marks them visited
+This process continues until no vertices are found
+
+Traversing in a binary search tree manner, visitind vertices 

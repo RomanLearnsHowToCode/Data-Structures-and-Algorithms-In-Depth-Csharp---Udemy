@@ -202,3 +202,5 @@ In next round, identifies new vertices reachable from level 1 vertices which are
 This process continues until no vertices are found
 
 Traversing in a binary search tree manner, visitind vertices 
+
+BFS - level order traversal

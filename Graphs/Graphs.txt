@@ -211,3 +211,19 @@ function would take one parameter (s) - start vortex
 traversal is similar to binary trees, can use queue
 
 -> visit vertice, enque it
+
+// Depth First Search
+- depth first search starts at a vertex
+- selects the adjancent vertex from the start vertex
+- visit the adjacent vertex, mark as visited
+- continue the above procedure, until there are no more unexplored edges, then terminate
+
+vertices of graph of 7, from 0 to 6
+
+traveling through adjacent edges
+
+we can have different result with the depth first search starting from the same vertice as it depends which edge was first to visit
+
+// Depth First Search Algorithm
+
+using arrays, using recursion

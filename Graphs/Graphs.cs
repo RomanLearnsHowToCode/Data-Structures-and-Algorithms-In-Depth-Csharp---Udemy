@@ -9,11 +9,13 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
         // Graphs ADT
         int vertices; // store number of vertices
         int[,] adjMat; // 2 dimensional matrice
+        int[] visited; // visited array for depth first search
 
         public Graphs(int n)
         {
             vertices = n;
             adjMat = new int[n, n]; // memory alocated for matrice - row and colums n * n
+            visited = new int[vertices]; // depth first search 
         }
 
         public void insertEdge(int u, int v, int x) // x - cost of the edge
@@ -150,6 +152,29 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
         }
 
+        // Depth First Search
 
+       public void DFS(int s) // parameter s - start vertice for depth first search
+        {
+            // check if the vertice was visited, if 0 - wasn't visited
+
+            if(visited[s] == 0)
+            {
+                Console.Write(s + " "); // print out vertice
+                visited[s] = 1; // means that vertice s is now visited
+
+                // find all the edges from vertice s
+                for(int j = 0; j < vertices; j++)
+                {
+                    // check if edge between s and j exist, second would check if the vertice s was already visited
+                    if(adjMat[s,j] == 1 && visited[j] == 0)
+                    {
+                        // if it wasn't visited, then parse j and call the DFS recursively
+                        DFS(j);
+                    }
+                }
+            }
+
+        }
     }
 }

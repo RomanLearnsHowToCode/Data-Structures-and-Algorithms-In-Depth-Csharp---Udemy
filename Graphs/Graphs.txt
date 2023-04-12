@@ -204,3 +204,10 @@ This process continues until no vertices are found
 Traversing in a binary search tree manner, visitind vertices 
 
 BFS - level order traversal
+
+// Breadth-First Search Algorithm
+
+function would take one parameter (s) - start vortex
+traversal is similar to binary trees, can use queue
+
+-> visit vertice, enque it

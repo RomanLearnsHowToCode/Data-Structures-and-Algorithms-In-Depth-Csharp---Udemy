@@ -118,5 +118,38 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             }
         }
 
+        // Breadth-First Search (traversal) s - start vertice
+
+        public void BFS(int s)
+        {
+            int i = s;
+
+            // using queues link
+            linkedListQueues q = new linkedListQueues();
+
+            int[] visited = new int[vertices];
+            Console.Write(i + " "); // visited vertice
+            visited[i] = 1;
+            q.enqueue(i); // enqueue
+
+            // will return true or false if queue is empty or not
+            while (!q.isEmpty())
+            {
+                i = q.dequeue(); // storing dequed vertice in i
+
+                for(int j = 0; j < vertices; j++)
+                {
+                    // adjMat - checks if edge exists between I and J, visited condition - was it visited?
+                    if(adjMat[i,j]==1 && visited[j] == 0)
+                    {
+                        Console.Write(j + " ");
+                        visited[j] = 1;
+                        q.enqueue(j);
+                    }
+                }
+            }
+        }
+
+
     }
 }

@@ -539,8 +539,28 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.ReadKey();
             */
 
-            // 
+            // breadth first search
 
+            Graphs g = new Graphs(7);
+            g.insertEdge(0, 1, 1);
+            g.insertEdge(0, 5, 1);
+            g.insertEdge(0, 6, 1);
+            g.insertEdge(1, 0, 1);
+            g.insertEdge(1, 2, 1);
+            g.insertEdge(1, 5, 1);
+            g.insertEdge(1, 6, 1);
+            g.insertEdge(2, 3, 1);
+            g.insertEdge(2, 4, 1);
+            g.insertEdge(2, 6, 1);
+            g.insertEdge(3, 4, 1);
+            g.insertEdge(4, 2, 1);
+            g.insertEdge(4, 5, 1);
+            g.insertEdge(5, 2, 1);
+            g.insertEdge(5, 3, 1);
+            g.insertEdge(6, 3, 1);
+            Console.WriteLine("Breadth First Search");
+            g.BFS(0); // starting with vertice 0
+            Console.ReadKey();
 
         }
     }

@@ -1,0 +1,50 @@
+﻿// Count Sort - how does it work
+count array - size greatest + 1 so if the largest element is 9, then the size would be 10, because each element will be counted, it means that if we 
+will have 2x 9kg barels, then we will have at index 10 2x entry (2x9kg barels)
+
+6 barels - need to arrange them according to their weight - 3 5 8 9 6 2
+each index of count array would be initialised with value 0
+
+    1 1   1 1   1 1
+0 1 2 3 4 5 6 7 8 9
+
+when we have duplicates, the index would be incremented as an example, imagine that we have got additional 3 and 5 kg barels
+
+    1 2   2 1   1 1
+0 1 2 3 4 5 6 7 8 9
+
+so this is the count, now we need to sort the array;
+
+count array: 0 0 0 0 0 0 0 0 0 0
+
+barels array: 2 3 3 5 5 6 8 9
+
+// Count Sort - Algorithm and Analysis
+
+algorithm countsort(A,n) 
+
+A = 3 5 8 9 6 2 3 5 5, we need to find largest element
+
+maxsize = max(A) - 9
+carray = [] maxsize +1 
+
+- need to traverse to the end of array
+for i = 0, i < n, i++ {
+carray[A[i]] = carray[A[i]] + 1; 
+}
+
+i,j = 0 - i is the index of carray, j is index of array A
+
+time complexity - O(n+m) - linear O(n) 
+space complexity - O(m)
+
+// Radix Sort - How does it works
+
+// Radix Sort - Algorithm and Analysis
+
+// Bucket Sort - How does it works
+
+// Bucket Sort - Algorithm and Analysis
+
+// Summary of Complexities - Index Based Sorting Algorithms
+

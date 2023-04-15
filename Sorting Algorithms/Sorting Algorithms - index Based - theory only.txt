@@ -38,13 +38,18 @@ i,j = 0 - i is the index of carray, j is index of array A
 time complexity - O(n+m) - linear O(n) 
 space complexity - O(m)
 
+// https://code-maze.com/counting-sort-in-c/ - write the Counting Sort in C#!
+
 // Radix Sort - How does it works
 
+
+
 // Radix Sort - Algorithm and Analysis
+
+
 
 // Bucket Sort - How does it works
 
 // Bucket Sort - Algorithm and Analysis
 
 // Summary of Complexities - Index Based Sorting Algorithms
-

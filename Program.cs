@@ -4,6 +4,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             /*
@@ -566,6 +567,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             // depth first search
             // directed graph of 7 vertices
+            /*
             Graphs g = new Graphs(7);
             g.insertEdge(0, 1, 1);
             g.insertEdge(0, 5, 1);
@@ -586,7 +588,12 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             Console.WriteLine("Depth First Search");
             g.DFS(0); // starting with vertice 0
             Console.ReadKey();
-
+            */
+            CountingSort counting = new CountingSort();
+            counting.countingSortF(counting.intValues);
+            //Console.WriteLine("Counting " + counting.intValues);
+            Console.ReadKey();
         }
     }
+    
 }

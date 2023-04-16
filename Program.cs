@@ -589,10 +589,18 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             g.DFS(0); // starting with vertice 0
             Console.ReadKey();
             */
+
+            /*
             CountingSort counting = new CountingSort();
             counting.countingSortF(counting.intValues);
-            //Console.WriteLine("Counting " + counting.intValues);
             Console.ReadKey();
+            */
+
+            // radix sort
+
+            radixSort radix = new radixSort();
+            //radix.GetMaxVal(radix.array, 10);
+            radix.CountingSort(radix.array, 10, 10);
         }
     }
     

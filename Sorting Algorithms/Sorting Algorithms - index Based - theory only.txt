@@ -42,14 +42,64 @@ space complexity - O(m)
 
 // Radix Sort - How does it works
 
+can sort from least significant digit or from the most significiant digit
+digits can be only between 0 - 9 
+when all digits are considered, then they will be all sorted
+barrels in kg: 63, 250, 835, 947, 651 ,28
 
+the least significant digits means for 63 = 3, 250 = 0, 835 = 5, 947 = 7, 651 = 1, 28 = 8
+
+seqentual order - 0 = 250, 651 = 1, 63 = 3, 835 = 5, 947 = 7, 28 = 8
+second digit is selected 
+
+250 = 5, 651 = 5, 63 = 6, 835 = 3, 947 = 4, 28 = 2
+
+sort 28 835 947 250 & 651 - second round done (second radix)
+250 will be removed, 651 kept, buckets cleared
+
+third digit
+
+0 = 28 & 63, 835 = 8, 947 = 9,250 = 2, 651 = 6
+
+arrange
+
+28 63 250 651 835 947 
+
+no more digits to be considered, barels are sorted according to their weight
+easiest case to sort 
 
 // Radix Sort - Algorithm and Analysis
 
+function radixsort(A,n) 
+A = 63 250 835 947 651 28
 
+find largest element in the array - maxElement = maximum element using max function
+digits = fidingdigits(maxElemenet) - 947
+
+Radix sort is using bins based on radix 
+We need 10 bins (array size 9)  0 1 2 3 4 5 6 7 8 9 
+
+// finding remainder of the number
+for i=0; i < digits; i++{
+    for j = 0; j < n; j++{
+        e = (A[j] / pow(10,i)) % 10
+        bins[e].append(A[j]);
+    }
+    // clearing the buckets
+    k = 0
+    for(x = 0; x < 10; x++){
+        A[k] = bins[x].remnove()
+        k = k + 1
+    }
+}
 
 // Bucket Sort - How does it works
 
+
+
 // Bucket Sort - Algorithm and Analysis
 
+
+
 // Summary of Complexities - Index Based Sorting Algorithms
+

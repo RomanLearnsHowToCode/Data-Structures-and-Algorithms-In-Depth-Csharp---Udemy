@@ -15,16 +15,6 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
         {
             var maxVal = array[0];
 
-
-            // print out the content of index content
-            /*
-            for(int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("array element" + array[i]);
-            }
-
-            */
-
             for (int i = 1; i < size; i++)
             {
                 // if the element at index i is greater than maxVal, then store the value into maxVal.
@@ -33,12 +23,10 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
                     maxVal = array[i];
                 }
             }
-            Console.WriteLine("Max Val: " + maxVal);
+            //Console.WriteLine("Max Val: " + maxVal);
             
             return maxVal;
         }
-
-        // radix sort algorithm
 
         public void CountingSort(int[] array, int size, int exponent)
         {
@@ -49,36 +37,19 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             for (int i = 0; i < 10; i++)
             {
-                //Console.WriteLine(" predoccurences " + occurences[i]);
                 occurences[i] = 0;
-                //Console.WriteLine(" po occurences " + occurences[i]);
             }
 
             for (int i = 0; i < size; i++)
             {
-                //Console.WriteLine("Exponent pred " + exponent);
                 occurences[(array[i] / exponent) % 10]++;
-                //Console.WriteLine("Exponent po " + exponent);
-
             }
-            Console.WriteLine("Exponent" + exponent);
-
+          
             for(int i = 1; i < 10; i++)
             {
-                //Console.WriteLine(" predoccurences " + occurences[i]);
                 occurences[i] += occurences[i - 1];
-
-                for(int j = 1; j < 10; j++)
-                {
-                    Console.WriteLine(" OCU " + occurences[j]);
-
-                }
-
-                Console.WriteLine(" po occurences " + occurences[i]);
             }
             
-            // 
-
             for (int i = size -1; i >= 0; i--)
             {
                 outputArr[occurences[(array[i] / exponent) % 10] - 1] = array[i];
@@ -88,13 +59,31 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
             for(int i = 0; i < size; i++)
             {
                 array[i] = outputArr[i];
-                for (int j = 1; j < 10; j++)
-                {
-                    Console.WriteLine(" outputArr " + outputArr[i]);
-                }
             }
 
+        }
 
+        public int[] RadixSort(int[] array, int size)
+        {
+            var maxVal = GetMaxVal(array, size);
+
+            Console.WriteLine("Max Val: " + maxVal);
+            for (int exponent = 1; maxVal / exponent > 0; exponent *= 10)
+            {
+                CountingSort(array, size, exponent);
+            }
+
+            display(array);
+
+            return array;
+        }
+
+        public void display(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("Int values: " + array[i]);
+            }
         }
 
     }

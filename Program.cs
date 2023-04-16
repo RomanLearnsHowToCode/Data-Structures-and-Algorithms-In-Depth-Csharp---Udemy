@@ -600,7 +600,7 @@ namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 
             radixSort radix = new radixSort();
             //radix.GetMaxVal(radix.array, 10);
-            radix.CountingSort(radix.array, 10, 10);
+            radix.RadixSort(radix.array, radix.array.Length);
         }
     }
     

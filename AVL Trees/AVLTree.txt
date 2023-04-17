@@ -1,0 +1,8 @@
+﻿// AVL C# implementation 
+
+https://www.youtube.com/watch?v=zP2xbKerIds
+https://www.youtube.com/watch?v=G2HxiekK_cA
+https://www.youtube.com/watch?v=vRwi_UcZGjU
+https://www.youtube.com/watch?v=dy8sddVQDck
+https://www.youtube.com/watch?v=dwr40KytyaY
+

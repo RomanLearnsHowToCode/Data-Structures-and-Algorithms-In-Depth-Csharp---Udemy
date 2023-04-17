@@ -95,11 +95,47 @@ for i=0; i < digits; i++{
 
 // Bucket Sort - How does it works
 
-
+- uses an array of buckets to perform sorting
+- insert elements in the buckets according to index computer
+- sort non-empty bucket using insertion sort
+- traverse buckets in sequence and store elements back into array
 
 // Bucket Sort - Algorithm and Analysis
 
+bucketsort(a,n) - collection of the elements and lenght of array
 
+A = [34, 54, 92, 86, 64, 28]
+
+max = maximum(A) - find the maximum element in the array
+
+buckets = [] - initially the buckets are empty
+
+// O(n)
+for (i = 0; i < n; i++)
+{
+// j representes the index of bucket
+j = n * A[i] / (max + 1)
+    buckets[j] = A[i]
+}
+
+O(n^2)
+// sorting buckets
+for(i=0; i < 10; i++){
+    insertionSort(buckets[i])
+}
+
+k = 0; 
+
+
+for (i = 0; i < 10; i++) {
+A[k] = bucket[i].remove()
+k = k+1;
+}
 
 // Summary of Complexities - Index Based Sorting Algorithms
+
+                        Best Case       Average Case        Worst Case      Space   Stable?
+Count Sort              O(n)            O(n)                O(n)            O(n)       YES
+Bucket / Bin sort       O(n)            O(n^2)              O(n^2)          O(n)       YES
+Radix Sort              O(n)            O(n)                O(n)            O(n)       YES
 

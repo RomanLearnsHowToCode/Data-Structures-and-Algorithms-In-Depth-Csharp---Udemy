@@ -5,6 +5,7 @@ using System.Text;
 namespace Data_Structures_and_Algorithms_In_Depth_Csharp___Udemy
 {
     // https://code-maze.com/bucket-sort-csharp/
+    // https://github.com/CodeMazeBlog/CodeMazeGuides/tree/main/csharp-algorithms/BucketSort
 
     /*
      STEPS:
